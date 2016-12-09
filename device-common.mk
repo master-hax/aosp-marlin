@@ -148,6 +148,11 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+ifeq ($(ENABLE_TREBLE), true)
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+endif
+
 # Listen configuration file
 PRODUCT_COPY_FILES += \
     device/google/marlin/listen_platform_info.xml:system/etc/listen_platform_info.xml
