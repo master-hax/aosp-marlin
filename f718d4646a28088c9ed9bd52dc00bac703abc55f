@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Daniel Cashman <dcashman@google.com>
+Verified+1: Alex Klyubin <klyubin@google.com>
+Submitted-by: Alex Klyubin <klyubin@google.com>
+Submitted-at: Wed, 28 Dec 2016 19:22:57 +0000
+Reviewed-on: https://android-review.googlesource.com/317815
+Project: device/google/marlin
+Branch: refs/heads/master
