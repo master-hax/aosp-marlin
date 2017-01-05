@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!-- This is a place for device-specific config values. The format and
+     filtering rules are the same as those in carrier_config*.xml files. This
+     file is read after any specific config file from the assets folder, so it
+     must use explicit filters for MCC ad MNC if that is desired. -->
+<carrier_config_list>
+
+    <carrier_config mcc="204" mnc="04">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="004">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="070">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="090">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="120">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="150">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="170">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="380">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="410">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="560">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="310" mnc="680">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="311" mnc="180">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="311" mnc="480">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="311" mnc="490">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="311" mnc="870">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+    <carrier_config mcc="312" mnc="530">
+        <string-array name="mobile_hotspot_provision_app_string_array">
+            <item value="com.google.android.tetheringentitlement" />
+            <item value="com.google.android.tetheringentitlement.CarrierEntitlementActivity" />
+        </string-array>
+        <string name="mobile_hotspot_provision_app_no_ui_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK</string>
+        <string name="mobile_hotspot_provision_response_string">com.google.android.carrierentitlement.SILENT_ENTITLEMENT_CHECK_RESULT</string>
+    </carrier_config>
+
+</carrier_config_list>
