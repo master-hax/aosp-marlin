@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "437ff998_2f4c22d7",
+        "filename": "device-common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 380,
+      "author": {
+        "id": 1072728
+      },
+      "writtenOn": "2017-01-12T23:03:15Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 375,
+        "startChar": 25,
+        "endLine": 380,
+        "endChar": 21
+      },
+      "revId": "6ef761218ffd03b71185feee137b77c8ca3700d8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
