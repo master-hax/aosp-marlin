@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "437ff998_66bd6e16",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 1074628
+      },
+      "writtenOn": "2017-01-12T08:14:25Z",
+      "side": 1,
+      "message": ":( This really ought to be using BOARD_HAL_STATIC_LIBRARIES in the BoardConfig.mk / LOCAL_HAL_STATIC_LIBRARIES in the Android.mk, not a not-actually-PRODUCT variable.\n\nNot that that supports multiple static libraries, but LOCAL_WHOLE_STATIC_LIBRARIES can fix that.",
+      "revId": "fceb8673e9c0da1ba513a9f3569c3f2a2974031b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
