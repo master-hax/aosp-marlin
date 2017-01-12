@@ -22,6 +22,30 @@
       "revId": "6ef761218ffd03b71185feee137b77c8ca3700d8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "437ff998_ef1e2a90",
+        "filename": "device-common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 380,
+      "author": {
+        "id": 1114063
+      },
+      "writtenOn": "2017-01-12T23:14:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "437ff998_2f4c22d7",
+      "range": {
+        "startLine": 375,
+        "startChar": 25,
+        "endLine": 380,
+        "endChar": 21
+      },
+      "revId": "6ef761218ffd03b71185feee137b77c8ca3700d8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
