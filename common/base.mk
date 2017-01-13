@@ -802,6 +802,10 @@ PRODUCT_COPY_FILES := \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
 
+# Telephony carrier restriction file
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.simlock.xml:system/etc/permissions/android.hardware.telephony.simlock.xml
+
 # Bluetooth configuration files
 #PRODUCT_COPY_FILES += \
     system/bluetooth/data/audio.conf:system/etc/bluetooth/audio.conf \
