@@ -94,6 +94,9 @@ TARGET_USES_QCOM_BSP := true
 endif
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=sailfish user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff
+BOARD_KERNEL_CMDLINE += android.early.prefix=/sys/devices/soc/624000.ufshc/host0/target0:0:0/0:0:0:0/block/sda/
+BOARD_KERNEL_CMDLINE += android.early.fstab_a=sda31+/vendor+ext4+ro+wait,verify
+BOARD_KERNEL_CMDLINE += android.early.fstab_b=sda32+/vendor+ext4+ro+wait,verify
 
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware firmware firmware/radio persist
 BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp

@@ -423,7 +423,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Setup dm-verity configs
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
-PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/bootdevice/by-name/vendor
+#PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/bootdevice/by-name/vendor
+PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/sda31
 $(call inherit-product, build/target/product/verity.mk)
 
 # Partitions (listed in the file) to be wiped under recovery.
