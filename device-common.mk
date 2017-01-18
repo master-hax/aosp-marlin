@@ -477,3 +477,6 @@ endif
 # virtual displays
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_hwc_vds=1
+
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
