@@ -1,0 +1,135 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c865c6f6_3ce31bbc",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-23T20:59:25Z",
+      "side": 1,
+      "message": "When GNSS lived in system_server, these operations (except for ioctl) were granted for all devices, not just marlin. Are you sure you don\u0027t need these for other devices?",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_fc1103ce",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-23T20:59:25Z",
+      "side": 1,
+      "message": "When GNSS lived in system_server, more MSM-specific ioctls were granted via the msm_sock_ipc_ioctls macro (see ioctl_macros). Are you sure you don\u0027t need the other four ioctls granted by that macro?",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_1ca05733",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-23T20:59:25Z",
+      "side": 1,
+      "message": "When GNSS lived in system_server, these operations were granted for all devices, not just for marlin. Are you sure you don\u0027t need these for other devices?",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_bc094b52",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-23T20:59:25Z",
+      "side": 1,
+      "message": "When GNSS lived in system_server, this apparently wasn\u0027t needed -- there are no sysfs_msm_subsys rules for system_server? Why is this needed now?",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 51
+      },
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_1cfcd7f8",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-23T20:59:25Z",
+      "side": 1,
+      "message": "When GNSS lived in system_Server, this was granted only for userdebug and eng devices. Please do the same here.",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_dc53df23",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-23T20:59:25Z",
+      "side": 1,
+      "message": "When GNSS lived in system_server, this wasn\u0027t needed. Why is this needed now?",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_5c65aff5",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-23T20:59:25Z",
+      "side": 1,
+      "message": "When GNSS lived in system_server, this wasn\u0027t needed. Why is this needed now?",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 52
+      },
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
