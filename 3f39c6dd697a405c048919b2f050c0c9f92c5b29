@@ -177,6 +177,29 @@
     },
     {
       "key": {
+        "uuid": "ce96e9e6_ae6e3081",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T22:42:28Z",
+      "side": 1,
+      "message": "Done!",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 51
+      },
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c865c6f6_1cfcd7f8",
         "filename": "sepolicy/hal_gnss.te",
         "patchSetId": 1
@@ -258,6 +281,23 @@
       "writtenOn": "2017-01-24T19:20:14Z",
       "side": 1,
       "message": "Ack. Consider introducing \u0026 using a more specific label, e.g., for esoc subtree. This way you won\u0027t need to grant access to all of /sys",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "794a5f61_a1282fc6",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T22:42:28Z",
+      "side": 1,
+      "message": "I tried creating a label for the same and it works for the GNSS HAL but it creates avc denied warnings from a few different services(radio, port-bridge, time, imscm, per_mgr) for esoc, so I think I better not create the label.",
       "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
