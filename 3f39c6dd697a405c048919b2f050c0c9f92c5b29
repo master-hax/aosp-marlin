@@ -154,6 +154,29 @@
     },
     {
       "key": {
+        "uuid": "503795cd_c75f47b3",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-24T19:20:14Z",
+      "side": 1,
+      "message": "You\u0027re right. It should. Do you want to replace this with r_dir_file(hal_gnss, sysfs_msm_subsys) or do you want to keep the more specific list of permitted operations?",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 51
+      },
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c865c6f6_1cfcd7f8",
         "filename": "sepolicy/hal_gnss.te",
         "patchSetId": 1
@@ -224,6 +247,23 @@
     },
     {
       "key": {
+        "uuid": "65786dd3_e2034f3e",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-24T19:20:14Z",
+      "side": 1,
+      "message": "Ack. Consider introducing \u0026 using a more specific label, e.g., for esoc subtree. This way you won\u0027t need to grant access to all of /sys",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c865c6f6_5c65aff5",
         "filename": "sepolicy/hal_gnss.te",
         "patchSetId": 1
@@ -259,6 +299,29 @@
       "side": 1,
       "message": "Same as above.",
       "parentUuid": "c865c6f6_5c65aff5",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 52
+      },
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d257ac0a_6b08c6c9",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-01-24T19:20:14Z",
+      "side": 1,
+      "message": "ack",
       "range": {
         "startLine": 16,
         "startChar": 0,
