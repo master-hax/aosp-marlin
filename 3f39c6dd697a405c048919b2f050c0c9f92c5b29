@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "c865c6f6_c7530824",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T19:11:44Z",
+      "side": 1,
+      "message": "All devices that use the Qualcomm GPS HAL implementation appears to need this. I unfortunately do not know about other vendor HAL implementations.",
+      "parentUuid": "c865c6f6_3ce31bbc",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c865c6f6_fc1103ce",
         "filename": "sepolicy/hal_gnss.te",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "c865c6f6_478ef887",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T19:11:44Z",
+      "side": 1,
+      "message": "These are the only ones for which I saw the avc-denied logs.",
+      "parentUuid": "c865c6f6_fc1103ce",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c865c6f6_1ca05733",
         "filename": "sepolicy/hal_gnss.te",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2017-01-23T20:59:25Z",
       "side": 1,
       "message": "When GNSS lived in system_server, these operations were granted for all devices, not just for marlin. Are you sure you don\u0027t need these for other devices?",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_6778dc90",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T19:11:44Z",
+      "side": 1,
+      "message": "These appear to be needed for the angler, bullhead and marlin all of which use Qualcomm GPS HALs. I am not sure about the HAL implementations by other vendors.",
+      "parentUuid": "c865c6f6_1ca05733",
       "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -76,6 +130,30 @@
     },
     {
       "key": {
+        "uuid": "c865c6f6_62afaa68",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T19:11:44Z",
+      "side": 1,
+      "message": "Actually, as per our discussion(and with Nick), wouldn\u0027t this have been included in the permission \"r_dir_file(system_server, sysfs_type)\" in system_server.te ?",
+      "parentUuid": "c865c6f6_bc094b52",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 51
+      },
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c865c6f6_1cfcd7f8",
         "filename": "sepolicy/hal_gnss.te",
         "patchSetId": 1
@@ -87,6 +165,24 @@
       "writtenOn": "2017-01-23T20:59:25Z",
       "side": 1,
       "message": "When GNSS lived in system_Server, this was granted only for userdebug and eng devices. Please do the same here.",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_c2ebf65c",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T19:11:44Z",
+      "side": 1,
+      "message": "Done!",
+      "parentUuid": "c865c6f6_1cfcd7f8",
       "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -110,6 +206,24 @@
     },
     {
       "key": {
+        "uuid": "c865c6f6_429ca6af",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T19:11:44Z",
+      "side": 1,
+      "message": "Same as above.",
+      "parentUuid": "c865c6f6_dc53df23",
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c865c6f6_5c65aff5",
         "filename": "sepolicy/hal_gnss.te",
         "patchSetId": 1
@@ -121,6 +235,30 @@
       "writtenOn": "2017-01-23T20:59:25Z",
       "side": 1,
       "message": "When GNSS lived in system_server, this wasn\u0027t needed. Why is this needed now?",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 52
+      },
+      "revId": "3f39c6dd697a405c048919b2f050c0c9f92c5b29",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c865c6f6_ada5938b",
+        "filename": "sepolicy/hal_gnss.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1120612
+      },
+      "writtenOn": "2017-01-24T19:11:44Z",
+      "side": 1,
+      "message": "Same as above.",
+      "parentUuid": "c865c6f6_5c65aff5",
       "range": {
         "startLine": 16,
         "startChar": 0,
