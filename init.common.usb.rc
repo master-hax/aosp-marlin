@@ -14,6 +14,14 @@ on boot
     write /sys/module/g_android/parameters/mtp_rx_req_len 131072
     setprop sys.usb.rps_mask 0
 
+    chown root system /sys/class/dual_role_usb/otg_default/mode
+    chown root system /sys/class/dual_role_usb/otg_default/power_role
+    chown root system /sys/class/dual_role_usb/otg_default/data_role
+    chmod 664 /sys/class/dual_role_usb/otg_default/mode
+    chmod 664 /sys/class/dual_role_usb/otg_default/power_role
+    chmod 664 /sys/class/dual_role_usb/otg_default/data_role
+
+
 on post-fs
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
