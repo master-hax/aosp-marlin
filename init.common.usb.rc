@@ -12,6 +12,9 @@ on boot
     write /sys/class/android_usb/android0/f_rndis_qc/rndis_transports BAM2BAM_IPA
     write /sys/module/g_android/parameters/mtp_tx_req_len 131072
     write /sys/module/g_android/parameters/mtp_rx_req_len 131072
+    setprop sys.usb.ffs.max_write 524288
+    setprop sys.usb.ffs.max_read 524288
+    setprop sys.usb.mtp.device_type 3
     setprop sys.usb.rps_mask 0
 
 on post-fs
