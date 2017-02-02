@@ -16,6 +16,23 @@
       "revId": "879639e95902d8300e7400009f6e3b9edd2b177e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "62190076_c7241b0b",
+        "filename": "sepolicy/hal_vr.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1126384
+      },
+      "writtenOn": "2017-02-02T18:15:28Z",
+      "side": 1,
+      "message": "I didn\u0027t get any violations when I tried it out.\n\nIt\u0027s worth noting that some services have write, and some w_file_perms.  system_server, though, just has write.",
+      "revId": "879639e95902d8300e7400009f6e3b9edd2b177e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
