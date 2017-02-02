@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "420c90fb_065a8880",
+        "filename": "sepolicy/hal_vr.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-02-02T18:04:15Z",
+      "side": 1,
+      "message": "Is \"write\" sufficient? I see that mediaserver is granted w_file_perms.",
+      "revId": "879639e95902d8300e7400009f6e3b9edd2b177e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
