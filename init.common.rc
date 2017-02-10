@@ -656,7 +656,7 @@ service msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.
     class core
     user root
     group root
-    writepid /dev/cpuset/system-background/tasks
+    cpuset /system-background/tasks
 
 service atfwd /system/bin/ATFWD-daemon
     class late_start
@@ -688,7 +688,7 @@ service perfd /vendor/bin/perfd
    class main
    user root
    group root system
-   writepid /dev/cpuset/system-background/tasks
+   cpuset /system-background/tasks
 
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -B -z \
