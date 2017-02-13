@@ -1,10 +1,23 @@
-allow hal_audio perfd:unix_stream_socket connectto;
-allow hal_audio perfd_data_file:dir search;
-allow hal_audio perfd_data_file:sock_file write;
+allow hal_audio_server perfd:unix_stream_socket connectto;
+allow hal_audio_server perfd_data_file:dir search;
+allow hal_audio_server perfd_data_file:sock_file write;
 
-allow hal_audio audio_cal_device:chr_file rw_file_perms;
-r_dir_file(hal_audio, sysfs_soc)
+allow hal_audio_server audio_cal_device:chr_file rw_file_perms;
+r_dir_file(hal_audio_server, sysfs_soc)
 
 userdebug_or_eng(`
-  allow hal_audio diag_device:chr_file rw_file_perms;
+  allow hal_audio_server diag_device:chr_file rw_file_perms;
+')
+
+passthrough_hal(hal_audio, `
+  allow hal_audio_client perfd:unix_stream_socket connectto;
+  allow hal_audio_client perfd_data_file:dir search;
+  allow hal_audio_client perfd_data_file:sock_file write;
+
+  allow hal_audio_client audio_cal_device:chr_file rw_file_perms;
+  r_dir_file(hal_audio_client, sysfs_soc)
+
+  userdebug_or_eng(`
+    allow hal_audio_client diag_device:chr_file rw_file_perms;
+  ')
 ')
