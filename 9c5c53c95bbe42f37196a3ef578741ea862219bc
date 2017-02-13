@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c7fea3a9_105796db",
+        "filename": "sepolicy/audioserver.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-13T23:43:17Z",
+      "side": 1,
+      "message": "Have you confirmed that this is actually necessary?\n\nThis is not part of the core audioserver, seems like it should be part of the hal.",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 30
+      },
+      "revId": "9c5c53c95bbe42f37196a3ef578741ea862219bc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
