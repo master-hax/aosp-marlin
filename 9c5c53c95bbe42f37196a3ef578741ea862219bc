@@ -22,6 +22,30 @@
       "revId": "9c5c53c95bbe42f37196a3ef578741ea862219bc",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d8e5c154_47281765",
+        "filename": "sepolicy/audioserver.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-02-14T00:45:56Z",
+      "side": 1,
+      "message": "See git blame for this. Looks like rild IPCs into audioserver and there\u0027s a callback (i.e., audioserver -\u003e rild) involved. Clearly, this rule has nothing to do with Audio HAL, unless rild is a client of Audio HAL which is unlikely as rild hosts Telephony HAL.",
+      "parentUuid": "c7fea3a9_105796db",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 30
+      },
+      "revId": "9c5c53c95bbe42f37196a3ef578741ea862219bc",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
