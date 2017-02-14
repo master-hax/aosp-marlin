@@ -35,16 +35,7 @@ LOCAL_CFLAGS += \
     -fno-short-enums \
     -D_ANDROID_
 
-LOCAL_COPY_HEADERS_TO:= libloc_api_v02/
-
-LOCAL_COPY_HEADERS:= \
-    location_service_v02.h \
-    loc_api_v02_log.h \
-    loc_api_v02_client.h \
-    loc_api_sync_req.h \
-    LocApiV02.h \
-    loc_util_log.h
-
+LOCAL_EXPORT_C_INCLUDE_DIRS:=$(LOCAL_PATH)
 
 ## Includes
 LOCAL_C_INCLUDES := \
