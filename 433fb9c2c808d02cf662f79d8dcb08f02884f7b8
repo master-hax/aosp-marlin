@@ -70,6 +70,30 @@
       "revId": "433fb9c2c808d02cf662f79d8dcb08f02884f7b8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bebc1a53_6a24dca9",
+        "filename": "sepolicy/bluetooth.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-02-17T20:54:38Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "30b137a2_b3035a6f",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 60
+      },
+      "revId": "433fb9c2c808d02cf662f79d8dcb08f02884f7b8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
