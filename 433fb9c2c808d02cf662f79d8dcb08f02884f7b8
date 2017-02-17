@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "67a9cb00_f178b7cf",
+        "filename": "sepolicy/bluetooth.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1076123
+      },
+      "writtenOn": "2017-02-17T13:14:40Z",
+      "side": 0,
+      "message": "I\u0027m not sure about this one.  Do we know what it\u0027s used for?  Power management, tethering?",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 60
+      },
+      "revId": "433fb9c2c808d02cf662f79d8dcb08f02884f7b8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
