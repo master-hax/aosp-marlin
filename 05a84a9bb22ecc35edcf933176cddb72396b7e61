@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a6d0c3d6_76b8e659",
+        "filename": "sepolicy/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-17T02:40:04Z",
+      "side": 1,
+      "message": "this isn\u0027t right. genfscon is for filesystems that do not support labeling. Debugfs does.\n\nOn Sailfish, without this change I see:\nsailfish:/ # ls -laZ /sys/kernel/debug/kgsl                                                     \ntotal 0\ndrwxr-xr-x  5 root root u:object_r:debugfs_kgsl:s0 0 1970-01-01 00:00 .\ndrwxr-xr-x 95 root root u:object_r:debugfs:s0      0 1970-01-01 00:00 ..\ndrwxr-xr-x  2 root root u:object_r:debugfs_kgsl:s0 0 1970-01-01 00:00 debug\n-r--r--r--  1 root root u:object_r:debugfs_kgsl:s0 0 1970-01-01 00:00 events\ndrwxr-xr-x  4 root root u:object_r:debugfs_kgsl:s0 0 1970-01-01 00:00 kgsl-3d0\ndrwxr-xr-x  6 root root u:object_r:debugfs_kgsl:s0 0 2017-02-16 23:38 proc",
+      "range": {
+        "startLine": 13,
+        "startChar": 9,
+        "endLine": 13,
+        "endChar": 16
+      },
+      "revId": "05a84a9bb22ecc35edcf933176cddb72396b7e61",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
