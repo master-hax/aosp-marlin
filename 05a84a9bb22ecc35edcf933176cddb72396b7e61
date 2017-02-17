@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "d0ee139b_4061fd6b",
+        "filename": "sepolicy/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1115183
+      },
+      "writtenOn": "2017-02-17T02:52:33Z",
+      "side": 1,
+      "message": "The problem is that the subdirectories of /kgsl/proc are not getting labelled correctly when they\u0027re created for new processes - they\u0027re getting labeled as debugfs rather than debugfs_kgsl. How can I write the label to avoid this?",
+      "parentUuid": "a6d0c3d6_76b8e659",
+      "range": {
+        "startLine": 13,
+        "startChar": 9,
+        "endLine": 13,
+        "endChar": 16
+      },
+      "revId": "05a84a9bb22ecc35edcf933176cddb72396b7e61",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1c4303c2_92793a0d",
         "filename": "sepolicy/system_server.te",
         "patchSetId": 1
@@ -36,6 +60,24 @@
       "writtenOn": "2017-02-17T02:44:29Z",
       "side": 1,
       "message": "I ran \"dumpsys meminfo\" on Marlin last week and didn\u0027t see any new debugfs_kgsl denials. How are these denials triggered?",
+      "revId": "05a84a9bb22ecc35edcf933176cddb72396b7e61",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b9877350_772919a7",
+        "filename": "sepolicy/system_server.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1115183
+      },
+      "writtenOn": "2017-02-17T02:52:33Z",
+      "side": 1,
+      "message": "dumpsys only works in passthrough mode right now because the kgsl/proc/\u003cpid\u003e/mem files are being labeled as debugfs (which system_server can access) rather than debugfs_kgsl (which it cannot). The other parts of this CL will break passthrough mode unless system_server gets this permission",
+      "parentUuid": "1c4303c2_92793a0d",
       "revId": "05a84a9bb22ecc35edcf933176cddb72396b7e61",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
