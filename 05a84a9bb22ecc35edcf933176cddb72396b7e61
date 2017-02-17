@@ -73,6 +73,29 @@
     },
     {
       "key": {
+        "uuid": "97259de3_120d9b40",
+        "filename": "sepolicy/hal_memtrack.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-17T17:27:18Z",
+      "side": 1,
+      "message": "Is this a short term fix to remove logspam? Do we need a bug tracking the real fix?\n\nHiding denials can make debugging issues difficult. If someone adds code that needs this access, it\u0027s blocked by selinux, but no denials are generated....",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 74
+      },
+      "revId": "05a84a9bb22ecc35edcf933176cddb72396b7e61",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1c4303c2_92793a0d",
         "filename": "sepolicy/system_server.te",
         "patchSetId": 1
