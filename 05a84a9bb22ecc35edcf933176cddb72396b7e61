@@ -22,6 +22,23 @@
       "revId": "05a84a9bb22ecc35edcf933176cddb72396b7e61",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1c4303c2_92793a0d",
+        "filename": "sepolicy/system_server.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-17T02:44:29Z",
+      "side": 1,
+      "message": "I ran \"dumpsys meminfo\" on Marlin last week and didn\u0027t see any new debugfs_kgsl denials. How are these denials triggered?",
+      "revId": "05a84a9bb22ecc35edcf933176cddb72396b7e61",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
