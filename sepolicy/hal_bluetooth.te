@@ -3,3 +3,6 @@ allow hal_bluetooth wcnss_filter:unix_stream_socket connectto;
 
 # wc_transport.start_hci and friends
 set_prop(hal_bluetooth, wc_prop)
+
+# Allow access to net_admin ioctls
+allowxperm hal_bluetooth self:udp_socket ioctl priv_sock_ioctls;
