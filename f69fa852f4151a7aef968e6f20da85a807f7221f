@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "92624954_aa0f565b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-02-27T21:50:12Z",
+      "side": 1,
+      "message": "Nit: This doesn\u0027t start the service. This commit is just about adding SELinux policy for this service.",
+      "revId": "f69fa852f4151a7aef968e6f20da85a807f7221f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
