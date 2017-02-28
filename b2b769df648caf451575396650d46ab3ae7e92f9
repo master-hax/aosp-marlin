@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "83fb455a_04b6bc04",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1003966
+      },
+      "writtenOn": "2017-02-28T22:01:47Z",
+      "side": 1,
+      "message": "The bug seems unrelated to this change. I\u0027d just delete it.",
+      "revId": "b2b769df648caf451575396650d46ab3ae7e92f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
