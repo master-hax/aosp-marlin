@@ -116,6 +116,7 @@
 /system/bin/preloads_copy\.sh     u:object_r:preloads_copy_exec:s0
 
 # files in /vendor
+/vendor/bin/hw/android\.hardware\.drm@1\.0-service.widevine  u:object_r:hal_drm_widevine_exec:s0
 /vendor/bin/thermal-engine  u:object_r:thermal-engine_exec:s0
 /vendor/bin/perfd           u:object_r:perfd_exec:s0
 /vendor/bin/nanohub_slpi    u:object_r:nanohub_slpi_exec:s0
