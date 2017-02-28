@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "60702937_0e08fd71",
+        "filename": "sepolicy/cnss-daemon.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-28T22:08:04Z",
+      "side": 0,
+      "message": "this permission is no longer granted.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 44
+      },
+      "revId": "43774cd91412cd00317475fa15ab57e5ffce6d12",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

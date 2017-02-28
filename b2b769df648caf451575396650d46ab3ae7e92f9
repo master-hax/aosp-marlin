@@ -16,6 +16,115 @@
       "revId": "b2b769df648caf451575396650d46ab3ae7e92f9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f8207d2_cf118567",
+        "filename": "sepolicy/hal_dumpstate_impl.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-28T22:08:04Z",
+      "side": 1,
+      "message": "commented out",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 59
+      },
+      "revId": "b2b769df648caf451575396650d46ab3ae7e92f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f5ec206_0722a299",
+        "filename": "sepolicy/hal_fingerprint.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-28T22:08:04Z",
+      "side": 1,
+      "message": "Believe this is already handled in hal_server() macro",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 46
+      },
+      "revId": "b2b769df648caf451575396650d46ab3ae7e92f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d22deeb_d8fbae52",
+        "filename": "sepolicy/qsee_logger.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-28T22:08:04Z",
+      "side": 1,
+      "message": "should just leave as system_file",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 21
+      },
+      "revId": "b2b769df648caf451575396650d46ab3ae7e92f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4c0e46af_119d1f98",
+        "filename": "sepolicy/smlog_dump.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-28T22:08:04Z",
+      "side": 1,
+      "message": "just leave as system_file",
+      "range": {
+        "startLine": 1,
+        "startChar": 5,
+        "endLine": 1,
+        "endChar": 20
+      },
+      "revId": "b2b769df648caf451575396650d46ab3ae7e92f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "daaa9401_b06ee08f",
+        "filename": "sepolicy/smlog_dump.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-02-28T22:08:04Z",
+      "side": 1,
+      "message": "unreachable domain.",
+      "revId": "b2b769df648caf451575396650d46ab3ae7e92f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
