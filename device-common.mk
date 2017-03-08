@@ -146,7 +146,7 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+    wifi@1.0-service \
     libwpa_client \
     hostapd \
     wificond \
@@ -368,7 +368,7 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(ENABLE_TREBLE), true)
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-service
+    bluetooth@1.0-service
 endif
 
 # NFC packages
@@ -379,7 +379,7 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(ENABLE_TREBLE), true)
 PRODUCT_PACKAGES += \
-	android.hardware.nfc@1.0-service
+	nfc@1.0-service
 endif
 
 # Library used for VTS tests  (only for userdebug and eng builds)
