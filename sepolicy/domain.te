@@ -11,3 +11,5 @@ neverallow {
   -init
   -shell
 } camera_serialno_prop:file r_file_perms;
+
+dontaudit domain kernel:system module_request;
