@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "94351a85_e3fb8e50",
+        "filename": "sepolicy/domain.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-03-08T22:22:07Z",
+      "side": 1,
+      "message": "Can you move this up with line 3? These functionally belong together.",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 46
+      },
+      "revId": "7474c3df594ab51443e63061e526be0e89993d3c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
