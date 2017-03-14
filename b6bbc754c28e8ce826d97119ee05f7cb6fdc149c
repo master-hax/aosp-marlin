@@ -94,6 +94,30 @@
       "revId": "b6bbc754c28e8ce826d97119ee05f7cb6fdc149c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a10322a9_f8d008ff",
+        "filename": "sepolicy/hal_sensors.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-03-14T19:42:13Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "5a8cf0ed_2db490ef",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 56
+      },
+      "revId": "b6bbc754c28e8ce826d97119ee05f7cb6fdc149c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
