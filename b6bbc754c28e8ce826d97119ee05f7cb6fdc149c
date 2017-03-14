@@ -70,6 +70,30 @@
       "revId": "b6bbc754c28e8ce826d97119ee05f7cb6fdc149c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a8cf0ed_2db490ef",
+        "filename": "sepolicy/hal_sensors.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1059954
+      },
+      "writtenOn": "2017-03-14T18:12:04Z",
+      "side": 0,
+      "message": "So - as I commented on the other CL. This should be removed from the core policy - but allowed here.  This is a hal implementation detail - not a framework requirement",
+      "parentUuid": "cca643f6_1aa366bf",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 56
+      },
+      "revId": "b6bbc754c28e8ce826d97119ee05f7cb6fdc149c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
