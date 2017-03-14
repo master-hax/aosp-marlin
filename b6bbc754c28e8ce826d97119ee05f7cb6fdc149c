@@ -22,6 +22,30 @@
       "revId": "b6bbc754c28e8ce826d97119ee05f7cb6fdc149c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e0e91e95_d589d136",
+        "filename": "sepolicy/hal_sensors.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1018773
+      },
+      "writtenOn": "2017-03-14T15:57:02Z",
+      "side": 0,
+      "message": "See core policy CL which is part of this topic. https://android-review.googlesource.com/#/c/351874/1/public/hal_sensors.te line 8.",
+      "parentUuid": "5933dfd8_dbc2c6d4",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 56
+      },
+      "revId": "b6bbc754c28e8ce826d97119ee05f7cb6fdc149c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
