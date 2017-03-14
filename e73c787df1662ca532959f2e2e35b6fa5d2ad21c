@@ -16,6 +16,24 @@
       "revId": "e73c787df1662ca532959f2e2e35b6fa5d2ad21c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eea423da_3299e21f",
+        "filename": "init.common.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1059418
+      },
+      "writtenOn": "2017-03-14T23:06:47Z",
+      "side": 1,
+      "message": "I\u0027m sorry for the confusion. I was testing the change on internal master, but had a merge conflict because this file is different between aosp and internal master... the original mkdir for preloads folder should be there.\n\nSince I normally do all my development on internal master, would you be OK reviewing changes there and only CP to AOSP after +2?",
+      "parentUuid": "72054534_dcc3c16f",
+      "revId": "e73c787df1662ca532959f2e2e35b6fa5d2ad21c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
