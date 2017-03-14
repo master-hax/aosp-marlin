@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5933dfd8_dbc2c6d4",
+        "filename": "sepolicy/hal_sensors.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-03-14T04:54:42Z",
+      "side": 0,
+      "message": "I don\u0027t see this in core policy.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 56
+      },
+      "revId": "b6bbc754c28e8ce826d97119ee05f7cb6fdc149c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
