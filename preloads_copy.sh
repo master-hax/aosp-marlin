@@ -30,6 +30,7 @@ if [ $# -eq 1 ]; then
   done
   # Wait for jobs to finish
   wait
+  restorecon -R $dest_dir
   log -p i -t preloads_copy "Copying complete"
   exit 0
 else
