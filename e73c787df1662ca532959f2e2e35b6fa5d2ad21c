@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "72054534_dcc3c16f",
+        "filename": "init.common.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1003966
+      },
+      "writtenOn": "2017-03-14T22:31:17Z",
+      "side": 1,
+      "message": "I\u0027m surprised removing the \"mkdir /data/preloads\" directory worked. I thought you had to create the top level directory before you created subdirectories. Did you test this change with a data wipe and ensure everything is created as expected?",
+      "revId": "e73c787df1662ca532959f2e2e35b6fa5d2ad21c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
