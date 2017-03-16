@@ -471,3 +471,8 @@ endif
 # virtual displays
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_hwc_vds=1
+
+# b/35633646
+# Statically linked toybox for modprobe in recovery mode
+PRODUCT_PACKAGES += \
+    toybox_static
