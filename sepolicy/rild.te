@@ -15,7 +15,7 @@ r_dir_file(rild, sysfs_type)
 
 allow rild time:unix_stream_socket connectto;
 # smlog_dump
-allow rild smlog_dump_exec:file rx_file_perms;
+domain_auto_trans(rild, smlog_dump_exec, smlog_dump)
 
 allowxperm rild self:udp_socket ioctl priv_sock_ioctls;
 allow rild self:socket ioctl;
