@@ -382,6 +382,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
      android.hardware.tests.msgq@1.0-impl
 
+# Test HAL for HIDL unit tests
+PRODUCT_PACKAGES += \
+     android.hardware.tests.foo@1.0-impl \
+     android.hardware.tests.bar@1.0-impl \
+     android.hardware.tests.baz@1.0-impl \
+     android.hardware.tests.inheritance@1.0-impl \
+     android.hardware.tests.pointer@1.0-impl \
+     android.hardware.tests.memory@1.0-impl
+
 # For VTS profiling.
 PRODUCT_PACKAGES += \
      libvts_profiling \
