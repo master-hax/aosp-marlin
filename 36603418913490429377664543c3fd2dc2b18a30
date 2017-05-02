@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e2d8486_2364439b",
+        "filename": "audio_effects.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1042638
+      },
+      "writtenOn": "2017-05-02T15:41:48Z",
+      "side": 0,
+      "message": "Are QCom libraries being moved in a separate CL?",
+      "range": {
+        "startLine": 19,
+        "startChar": 10,
+        "endLine": 19,
+        "endChar": 49
+      },
+      "revId": "36603418913490429377664543c3fd2dc2b18a30",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
