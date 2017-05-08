@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "22b2eac8_aa175e9b",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 380,
+      "author": {
+        "id": 1120458
+      },
+      "writtenOn": "2017-05-08T22:59:26Z",
+      "side": 0,
+      "message": "these should be deleted as well. This might not work without internal policies. If you want to add them in, we\u0027ll need to do extensive testing. If you delete the entire thing, this is a no-op. If you just wait until O is released the correct thing will happen automatically.",
+      "range": {
+        "startLine": 380,
+        "startChar": 5,
+        "endLine": 380,
+        "endChar": 42
+      },
+      "revId": "f1fa356cd7dda8cd5383de11adbe693aceba6d0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
