@@ -1,0 +1,9 @@
+Presubmit-Ready+1: Sen Jiang <senj@google.com>
+Code-Review+2: Tao Bao <tbao@google.com>
+Verified+1: Sen Jiang <senj@google.com>
+Autosubmit+1: Sen Jiang <senj@google.com>
+Submitted-by: Svetoslav Ganov <svetoslavganov@google.com>
+Submitted-at: Thu, 01 Jun 2017 22:41:12 +0000
+Reviewed-on: https://android-review.googlesource.com/407575
+Project: device/google/marlin
+Branch: refs/heads/master
