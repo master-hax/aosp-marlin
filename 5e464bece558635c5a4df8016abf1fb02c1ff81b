@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0f3112a0_4e8328ed",
+        "filename": "sailfish/BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2017-06-26T15:39:33Z",
+      "side": 0,
+      "message": "i was worried that this is still meaningful in AOSP (though it\u0027s gone in internal master), until i noticed that we had both ENABLE_SCHEDBOOST and ENABLE_SCHED_BOOST :-/\n\nlooks like internally only the BoardConfig mess still exists, so these are indeed no-ops.",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "5e464bece558635c5a4df8016abf1fb02c1ff81b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
