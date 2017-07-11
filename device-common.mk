@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay
+DEVICE_PACKAGE_OVERLAYS += device/google/marlin/$(TARGET_DEVICE)/overlay
 
 # Input device files
 PRODUCT_COPY_FILES += \
@@ -491,3 +492,43 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Workaround for audio glitches
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.adm.buffering.ms=3
+
+# Call Volume Steps
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=7
+
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    device/google/marlin/init.common.rc:root/init.$(TARGET_DEVICE).rc \
+    device/google/marlin/init.common.usb.rc:root/init.$(TARGET_DEVICE).usb.rc \
+    device/google/marlin/fstab.common:root/fstab.$(TARGET_DEVICE) \
+    device/google/marlin/ueventd.common.rc:root/ueventd.$(TARGET_DEVICE).rc \
+    device/google/marlin/init.recovery.common.rc:root/init.recovery.$(TARGET_DEVICE).rc
+
+# Sensor hub init script
+PRODUCT_COPY_FILES += \
+    device/google/marlin/init.common.nanohub.rc:root/init.$(TARGET_DEVICE).nanohub.rc
+
+# Sensor packages
+PRODUCT_PACKAGES += \
+    sensors.$(TARGET_DEVICE) \
+    activity_recognition.$(TARGET_DEVICE)
+
+# NFC packages
+PRODUCT_PACKAGES += \
+    nfc_nci.$(TARGET_DEVICE)
+
+PRODUCT_COPY_FILES += \
+    device/google/marlin/nfc/libnfc-nxp.$(TARGET_DEVICE).conf:system/etc/libnfc-nxp.conf
+
+# Led packages
+PRODUCT_PACKAGES += \
+    lights.$(TARGET_DEVICE)
+
+# Thermal packages
+PRODUCT_PACKAGES += \
+    thermal.$(TARGET_DEVICE)
+
+# VR packages
+PRODUCT_PACKAGES += \
+    vr.$(TARGET_DEVICE)

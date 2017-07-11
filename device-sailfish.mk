@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL marlin devices
+# This file includes all definitions that apply to ALL sailfish devices
 #
 # Everything in this directory will become public
 
@@ -24,55 +24,12 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
 -include device/google/marlin/device-common.mk
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += device/google/marlin/sailfish/overlay
-
 # display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=420
-
-# Audio
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.vc_call_vol_steps=7
 
 # HWUI cache sizes
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.texture_cache_size=56 \
     ro.hwui.layer_cache_size=32 \
     ro.hwui.path_cache_size=16
-
-PRODUCT_COPY_FILES += \
-    device/google/marlin/init.common.rc:root/init.sailfish.rc \
-    device/google/marlin/init.common.usb.rc:root/init.sailfish.usb.rc \
-    device/google/marlin/fstab.common:root/fstab.sailfish \
-    device/google/marlin/ueventd.common.rc:root/ueventd.sailfish.rc \
-    device/google/marlin/init.recovery.common.rc:root/init.recovery.sailfish.rc
-
-# Sensor hub init script
-PRODUCT_COPY_FILES += \
-    device/google/marlin/init.common.nanohub.rc:root/init.sailfish.nanohub.rc
-
-# Sensor packages
-PRODUCT_PACKAGES += \
-    sensors.sailfish \
-    activity_recognition.sailfish
-
-# NFC packages
-PRODUCT_PACKAGES += \
-    nfc_nci.sailfish
-
-PRODUCT_COPY_FILES += \
-    device/google/marlin/nfc/libnfc-nxp.sailfish.conf:system/etc/libnfc-nxp.conf
-
-# Led packages
-PRODUCT_PACKAGES += \
-    lights.sailfish
-
-# Thermal packages
-PRODUCT_PACKAGES += \
-    thermal.sailfish
-
-# VR packages
-PRODUCT_PACKAGES += \
-    vr.sailfish
-
