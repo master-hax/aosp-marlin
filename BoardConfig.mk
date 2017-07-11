@@ -4,8 +4,8 @@
 #
 
 TARGET_BOARD_PLATFORM := msm8996
-TARGET_BOOTLOADER_BOARD_NAME := marlin
-TARGET_BOARD_INFO_FILE := device/google/marlin/marlin/board-info.txt
+TARGET_BOOTLOADER_BOARD_NAME := $(TARGET_DEVICE)
+TARGET_BOARD_INFO_FILE := device/google/marlin/$(TARGET_DEVICE)/board-info.txt
 
 TARGET_USES_INTERACTION_BOOST := true
 
@@ -44,12 +44,11 @@ BOARD_USES_GENERIC_AUDIO := true
 BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_ENABLED_SND_MONITOR := true
-
 TARGET_USES_QCOM_MM_AUDIO := true
 
 -include $(QCPATH)/common/msm8996/BoardConfigVendor.mk
 
-BOARD_HAL_STATIC_LIBRARIES := libdumpstate.marlin
+BOARD_HAL_STATIC_LIBRARIES := libdumpstate.$(TARGET_DEVICE)
 
 # Some framework code requires this to enable BT
 BOARD_HAVE_BLUETOOTH := true
@@ -91,13 +90,13 @@ ifneq ($(TARGET_USES_AOSP),true)
 TARGET_USES_QCOM_BSP := true
 endif
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=marlin user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=$(TARGET_DEVICE) user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff
 
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware firmware firmware/radio persist
 BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
 
 BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy
-ifneq ($(filter marlin marlinf, $(TARGET_PRODUCT)),)
+ifneq ($(filter marlin marlinf sailfish sailfishf, $(TARGET_DEVICE)),)
 BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy/verizon
 endif
 BOARD_SECCOMP_POLICY += device/google/marlin/seccomp
