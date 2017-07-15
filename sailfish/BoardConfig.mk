@@ -98,8 +98,6 @@ BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy/verizon
 endif
 BOARD_SECCOMP_POLICY += device/google/marlin/seccomp
 
-BOARD_EGL_CFG := device/google/marlin/egl.cfg
-
 BOARD_KERNEL_BASE        := 0x80000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
