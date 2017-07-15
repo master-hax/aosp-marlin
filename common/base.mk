@@ -232,7 +232,6 @@ INIT += init.qcom.rc
 INIT += init.qcom.factory.rc
 INIT += init.qcom.sdio.sh
 INIT += init.qcom.wifi.sh
-INIT += vold.fstab
 INIT += init.qcom.ril.path.sh
 INIT += init.qcom.usb.rc
 INIT += init.qcom.efs.sync.sh
