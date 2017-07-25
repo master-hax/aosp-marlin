@@ -40,9 +40,10 @@ PRODUCT_COPY_FILES += \
     device/google/marlin/synaptics_dsxv26.idc:system/usr/idc/synaptics_dsxv26.idc
 
 # copy customized media_profiles and media_codecs xmls for msm8996
-PRODUCT_COPY_FILES += device/google/marlin/media_profiles.xml:system/etc/media_profiles.xml \
-                      device/google/marlin/media_codecs.xml:system/etc/media_codecs.xml \
-                      device/google/marlin/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
+PRODUCT_COPY_FILES += \
+    device/google/marlin/media_profiles.xml:system/etc/media_profiles.xml \
+    device/google/marlin/media_codecs.xml:system/etc/media_codecs.xml \
+    device/google/marlin/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
 
 # Override heap growth limit due to high display density on device
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -76,8 +77,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_large_cache_height=1024
 
 # For android_filesystem_config.h
-PRODUCT_PACKAGES += fs_config_files \
-                    fs_config_dirs
+PRODUCT_PACKAGES += \
+	fs_config_files \
+    fs_config_dirs
 
 # Audio configuration
 USE_XML_AUDIO_POLICY_CONF := 1
@@ -102,7 +104,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:system/etc/permissions/android.hardware.vulkan.version.xml
 
 # Use power.marlin on all devices
-PRODUCT_PROPERTY_OVERRIDES += ro.hardware.power=marlin
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.power=marlin
 
 # Audio effects
 PRODUCT_PACKAGES += \
@@ -124,8 +127,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # WLAN driver configuration files
 PRODUCT_COPY_FILES += \
-    device/google/marlin/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf     \
-    device/google/marlin/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf     \
+    device/google/marlin/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    device/google/marlin/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     device/google/marlin/WCNSS_cfg.dat:system/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat \
     device/google/marlin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
