@@ -1,0 +1,3 @@
+# device/<odm>/<project>/odm/init.rc
+on early-boot
+    setprop lego.odm.init 1
