@@ -1,0 +1,3 @@
+# device/<odm>/<project>/odm/odm.prop
+ro.product.device=legom
+ro.product.name=legom
