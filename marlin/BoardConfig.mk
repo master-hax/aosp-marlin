@@ -25,6 +25,7 @@ TARGET_2ND_CPU_VARIANT := kryo
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := false
 TARGET_NO_RECOVERY := true
+VNDK_REFERENCE_ABI_DUMP_DIR := device/google/marlin/abi-dumps
 ifneq ($(findstring aosp_marlin_svelte, $(TARGET_PRODUCT)),)
 TARGET_RECOVERY_FSTAB := device/google/marlin/fstab.aosp_svelte
 else
