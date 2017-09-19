@@ -852,6 +852,16 @@ $(call inherit-product, build/target/product/verity.mk)
 #skip boot jars check
 SKIP_BOOT_JARS_CHECK := true
 
+PRODUCT_LOADED_BY_PRIVILEGED_MODULES += \
+  qti-vzw-ims-internal \
+  qcrilhook \
+  ims \
+  Stk \
+  embmslibrary \
+  datastatusnotification \
+  VZWAPNLib \
+  UserDictionaryProvider
+
 PRODUCT_DEXPREOPT_SPEED_APPS += \
   SystemUIGoogle \
   SettingsGoogle \
