@@ -6,6 +6,7 @@
 TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOOTLOADER_BOARD_NAME := marlin
 TARGET_BOARD_INFO_FILE := device/google/marlin/marlin/board-info.txt
+TARGET_SYSTEM_PROP :=  device/google/marlin/system.prop
 
 TARGET_USES_INTERACTION_BOOST := true
 
