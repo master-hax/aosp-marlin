@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "036e2ef4_a366cfe2",
+        "filename": "sepolicy/hal_bootctl.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1124693
+      },
+      "writtenOn": "2017-10-19T18:14:34Z",
+      "side": 0,
+      "message": "Note that recovery domain get sysfs access through hal_bootctl.\nhttps://cs.corp.google.com/android/system/sepolicy/public/recovery.te?l\u003d13",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 42
+      },
+      "revId": "d9277081f402693676909d886b906cd5436b9cd2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
