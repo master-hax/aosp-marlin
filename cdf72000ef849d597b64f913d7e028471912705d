@@ -22,6 +22,30 @@
       "revId": "cdf72000ef849d597b64f913d7e028471912705d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4ec21667_70a15f98",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1115183
+      },
+      "writtenOn": "2017-10-19T20:56:50Z",
+      "side": 1,
+      "message": "The commit that added this permission (https://android-review.googlesource.com/c/device/google/marlin/+/321650) looks like it was tested by running \u0027bootctl set-active-slot \u003cslot\u003e\u0027. You could try running that to change the active slot, reboot and check the correct slot is used.",
+      "parentUuid": "5383f892_5cbcfcc1",
+      "range": {
+        "startLine": 10,
+        "startChar": 6,
+        "endLine": 10,
+        "endChar": 26
+      },
+      "revId": "cdf72000ef849d597b64f913d7e028471912705d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
