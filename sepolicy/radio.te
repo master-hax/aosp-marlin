@@ -40,3 +40,5 @@ allow radio sysfs_timestamp_switch:file r_file_perms;
 # just moving existing permissions from domain_deprecated to radio as part of
 # b/28760354 in order to deprivilege other processes which do not need access.
 r_dir_file(radio, sysfs)
+
+add_service(radio, qchook_service)
