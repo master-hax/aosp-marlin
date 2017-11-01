@@ -1,6 +1,6 @@
 # Policy for /vendor/bin/thermal-engine
 type thermal-engine, domain;
-type thermal-engine_exec, exec_type, file_type;
+type thermal-engine_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(thermal-engine)
 
@@ -25,3 +25,5 @@ userdebug_or_eng(`
   allow thermal-engine diag_device:chr_file rw_file_perms;
 ')
 
+# reboot/shutdown for thermal limits exceeded
+set_prop(thermal-engine, powerctl_prop)
