@@ -26,12 +26,15 @@ const int kVersion = 1;
 
 const float kMinSampleRateHzAccel = 6.250f;
 const float kMaxSampleRateHzAccel = 400.0f;
+const float kAccelRangeG = 16.0f;
+extern const float kScaleAccel = (kAccelRangeG * 9.81f / 32768.0f);
 
 const float kMinSampleRateHzGyro = 6.250f;
 const float kMaxSampleRateHzGyro = 400.0f;
 
 const float kMinSampleRateHzMag = 3.125f;
 const float kMaxSampleRateHzMag = 50.0f;
+extern const float kScaleMag = 0.15f;
 
 const float kMinSampleRateHzPolling = 0.1f;
 const float kMaxSampleRateHzPolling = 25.0f;
@@ -50,6 +53,31 @@ const float kMaxSampleRateHzLight = 5.0;
 
 const float kMinSampleRateHzOrientation = 12.5f;
 const float kMaxSampleRateHzOrientation = 200.0f;
+
+#ifdef DIRECT_REPORT_ENABLED
+constexpr uint32_t kDirectReportFlagAccel = (
+        // support up to rate level fast (nominal 200Hz);
+        (SENSOR_DIRECT_RATE_FAST << SENSOR_FLAG_SHIFT_DIRECT_REPORT)
+        // support ashmem and gralloc direct channel
+        | SENSOR_FLAG_DIRECT_CHANNEL_ASHMEM
+        | SENSOR_FLAG_DIRECT_CHANNEL_GRALLOC);
+constexpr uint32_t kDirectReportFlagGyro = (
+        // support up to rate level fast (nominal 200Hz);
+        (SENSOR_DIRECT_RATE_FAST << SENSOR_FLAG_SHIFT_DIRECT_REPORT)
+        // support ashmem and gralloc direct channel
+        | SENSOR_FLAG_DIRECT_CHANNEL_ASHMEM
+        | SENSOR_FLAG_DIRECT_CHANNEL_GRALLOC);
+constexpr uint32_t kDirectReportFlagMag = (
+        // support up to rate level normal (nominal 50Hz);
+        (SENSOR_DIRECT_RATE_NORMAL << SENSOR_FLAG_SHIFT_DIRECT_REPORT)
+        // support ashmem and gralloc direct channel
+        | SENSOR_FLAG_DIRECT_CHANNEL_ASHMEM
+        | SENSOR_FLAG_DIRECT_CHANNEL_GRALLOC);
+#else
+constexpr uint32_t kDirectReportFlagAccel = 0;
+constexpr uint32_t kDirectReportFlagGyro = 0;
+constexpr uint32_t kDirectReportFlagMag = 0;
+#endif
 
 /*
  * The fowllowing max count is determined by the total number of blocks
@@ -119,8 +147,8 @@ extern const sensor_t kSensorList[] = {
         kVersion,
         COMMS_SENSOR_ACCEL,
         SENSOR_TYPE_ACCELEROMETER,
-        GRAVITY_EARTH * 8.0f,                      // maxRange
-        GRAVITY_EARTH * 8.0f / 32768.0f,           // resolution
+        GRAVITY_EARTH * kAccelRangeG,              // maxRange
+        GRAVITY_EARTH * kAccelRangeG / 32768.0f,   // resolution
         0.0f,                                      // XXX power
         (int32_t)(1.0E6f / kMaxSampleRateHzAccel), // minDelay
         3000,                                      // XXX fifoReservedEventCount
@@ -128,7 +156,7 @@ extern const sensor_t kSensorList[] = {
         SENSOR_STRING_TYPE_ACCELEROMETER,
         "",                                        // requiredPermission
         (long)(1.0E6f / kMinSampleRateHzAccel),    // maxDelay
-        SENSOR_FLAG_CONTINUOUS_MODE,
+        SENSOR_FLAG_CONTINUOUS_MODE | kDirectReportFlagAccel,
         { NULL, NULL }
     },
     {
@@ -146,7 +174,7 @@ extern const sensor_t kSensorList[] = {
         SENSOR_STRING_TYPE_GYROSCOPE,
         "",                                        // requiredPermission
         (long)(1.0E6f / kMinSampleRateHzGyro),     // maxDelay
-        SENSOR_FLAG_CONTINUOUS_MODE,
+        SENSOR_FLAG_CONTINUOUS_MODE | kDirectReportFlagGyro,
         { NULL, NULL }
     },
     {
@@ -182,7 +210,7 @@ extern const sensor_t kSensorList[] = {
         SENSOR_STRING_TYPE_MAGNETIC_FIELD,
         "",                                        // requiredPermission
         (long)(1.0E6f / kMinSampleRateHzMag),      // maxDelay
-        SENSOR_FLAG_CONTINUOUS_MODE,
+        SENSOR_FLAG_CONTINUOUS_MODE | kDirectReportFlagMag,
         { NULL, NULL }
     },
     {
@@ -525,6 +553,24 @@ extern const sensor_t kSensorList[] = {
         "",                                     // requiredPermission
         0,                                      // maxDelay
         SENSOR_FLAG_WAKE_UP | SENSOR_FLAG_ONE_SHOT_MODE,
+        { NULL, NULL }
+    },
+    {
+        "BMI160 accelerometer (uncalibrated)",
+        "Bosch",
+        kVersion,
+        COMMS_SENSOR_ACCEL_UNCALIBRATED,
+        SENSOR_TYPE_ACCELEROMETER_UNCALIBRATED,
+        GRAVITY_EARTH * kAccelRangeG,              // maxRange
+        GRAVITY_EARTH * kAccelRangeG / 32768.0f,   // resolution
+        0.0f,                                      // XXX power
+        (int32_t)(1.0E6f / kMaxSampleRateHzAccel), // minDelay
+        3000,                                      // XXX fifoReservedEventCount
+        kMaxRawThreeAxisEventCount,                // XXX fifoMaxEventCount
+        SENSOR_STRING_TYPE_ACCELEROMETER_UNCALIBRATED,
+        "",                                        // requiredPermission
+        (long)(1.0E6f / kMinSampleRateHzAccel),    // maxDelay
+        SENSOR_FLAG_CONTINUOUS_MODE,
         { NULL, NULL }
     },
 };

@@ -7,7 +7,6 @@ TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOOTLOADER_BOARD_NAME := marlin
 TARGET_BOARD_INFO_FILE := device/google/marlin/marlin/board-info.txt
 
-ENABLE_SCHEDBOOST := true
 TARGET_USES_INTERACTION_BOOST := true
 
 TARGET_USES_AOSP := true
@@ -15,21 +14,22 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-#TODO: add kryo support? TARGET_CPU_VARIANT := kryo
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := kryo
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := krait
-
-ENABLE_CPUSETS := true
+TARGET_2ND_CPU_VARIANT := kryo
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := false
 TARGET_NO_RECOVERY := true
+ifneq ($(findstring aosp_marlin_svelte, $(TARGET_PRODUCT)),)
+TARGET_RECOVERY_FSTAB := device/google/marlin/fstab.aosp_svelte
+else
 TARGET_RECOVERY_FSTAB := device/google/marlin/fstab.common
+endif
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOOTLOADER_GCC_VERSION := arm-eabi-4.8
@@ -39,11 +39,10 @@ BOOTLOADER_PLATFORM := msm8996
 TARGET_USES_OVERLAY := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
+TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
-
-DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x00000056
 
 BOARD_USES_GENERIC_AUDIO := true
 
@@ -55,7 +54,7 @@ TARGET_USES_QCOM_MM_AUDIO := true
 
 -include $(QCPATH)/common/msm8996/BoardConfigVendor.mk
 
-BOARD_HAL_STATIC_LIBRARIES := libdumpstate.marlin
+TARGET_AUX_OS_VARIANT_LIST := marlin
 
 # Some framework code requires this to enable BT
 BOARD_HAVE_BLUETOOTH := true
@@ -81,11 +80,13 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
 TARGET_USERIMAGES_USE_EXT4 := true
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0x02000000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648
-#BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := squashfs
-#BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
-#BOARD_SYSTEMIMAGE_SQUASHFS_COMPRESSOR := lz4
+ifneq ($(findstring aosp_marlin_svelte, $(TARGET_PRODUCT)),)
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := squashfs
+BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
+BOARD_SYSTEMIMAGE_SQUASHFS_COMPRESSOR := lz4
+endif
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 10737418240
 BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
 BOARD_PERSISTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -97,7 +98,7 @@ ifneq ($(TARGET_USES_AOSP),true)
 TARGET_USES_QCOM_BSP := true
 endif
 
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=marlin user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=marlin user_debug=31 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff loop.max_part=7
 
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware firmware firmware/radio persist
 BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
@@ -106,14 +107,20 @@ BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy
 ifneq ($(filter marlin marlinf, $(TARGET_PRODUCT)),)
 BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy/verizon
 endif
-BOARD_SECCOMP_POLICY += device/google/marlin/seccomp
 
 BOARD_EGL_CFG := device/google/marlin/egl.cfg
 
 BOARD_KERNEL_BASE        := 0x80000000
 BOARD_KERNEL_PAGESIZE    := 4096
+ifneq ($(filter marlin_kasan, $(TARGET_PRODUCT)),)
+BOARD_KERNEL_OFFSET      := 0x80000
+BOARD_KERNEL_TAGS_OFFSET := 0x02500000
+BOARD_RAMDISK_OFFSET     := 0x02700000
+BOARD_MKBOOTIMG_ARGS     := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+else
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
+endif
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -182,9 +189,6 @@ HAVE_SYNAPTICS_DSX_FW_UPGRADE := true
 # Enable MDTP (Mobile Device Theft Protection)
 TARGET_USE_MDTP := true
 
-# Use prebuilt APN lib from Verizon Wireless
-TARGET_USE_VERIZON_APN_LIB_PREBUILT := true
-
 TARGET_BOARD_KERNEL_HEADERS := device/google/marlin/kernel-headers
 
 # Install odex files into the other system image
@@ -196,3 +200,19 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 #NFC
 NXP_CHIP_TYPE := PN551
+
+# Testing related defines
+BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/sailin-setup.sh
+
+# Use mke2fs to create ext4 images
+TARGET_USES_MKE2FS := true
+
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+
+ifneq ($(findstring marlin_svelte, $(TARGET_PRODUCT)),)
+BOARD_KERNEL_CMDLINE += mem=1152M
+MALLOC_SVELTE := true
+endif
+
+DEVICE_MANIFEST_FILE := device/google/marlin/manifest.xml
+DEVICE_MATRIX_FILE   := device/google/marlin/compatibility_matrix.xml
