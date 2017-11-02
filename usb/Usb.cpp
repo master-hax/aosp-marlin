@@ -490,8 +490,9 @@ static void uevent_event(uint32_t /*epevents*/, struct data *payload) {
   char msg[UEVENT_MSG_LEN + 2];
   char *cp;
   int n;
+  static const uid_t root_uid = uevent_root_uid();
 
-  n = uevent_kernel_multicast_recv(payload->uevent_fd, msg, UEVENT_MSG_LEN);
+  n = uevent_kernel_multicast_recv(payload->uevent_fd, msg, UEVENT_MSG_LEN, root_uid);
   if (n <= 0) return;
   if (n >= UEVENT_MSG_LEN) /* overflow -- discard */
     return;
