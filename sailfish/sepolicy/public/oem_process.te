@@ -1,0 +1,3 @@
+type oem_process, domain, mlstrustedsubject;
+
+allow oem_process vendor_foo_fs_type:file r_file_perms;
