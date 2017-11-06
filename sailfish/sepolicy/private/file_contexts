@@ -1,0 +1,2 @@
+/foo_file           u:object_r:foo_file:s0
+/dev/foo            u:object_r:foo_device:s0
