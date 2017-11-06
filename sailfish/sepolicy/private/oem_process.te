@@ -1,0 +1,4 @@
+type oem_process, domain, mlstrustedsubject;
+
+allow oem_process foo_file:file r_file_perms;
+allow oem_process foo_device:chr_file rw_file_perms;;
