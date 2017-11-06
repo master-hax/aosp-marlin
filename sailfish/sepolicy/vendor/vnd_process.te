@@ -1,0 +1,4 @@
+type vnd_process, domain, mlstrustedsubject;
+
+allow vnd_process foo_file:file r_file_perms;
+allow vnd_process foo_device:chr_file rw_file_perms;;
