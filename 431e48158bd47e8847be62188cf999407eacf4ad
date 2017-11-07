@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2596d70a_f7911dfa",
+        "filename": "sepolicy/radio.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1003966
+      },
+      "writtenOn": "2017-11-07T00:10:07Z",
+      "side": 1,
+      "message": "I don\u0027t see this macro in AOSP... Compile error?",
+      "revId": "431e48158bd47e8847be62188cf999407eacf4ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4f224336_cc123d50",
+        "filename": "sepolicy/rild.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1003966
+      },
+      "writtenOn": "2017-11-07T00:10:07Z",
+      "side": 1,
+      "message": "I don\u0027t see this macro in AOSP... Compile error?",
+      "revId": "431e48158bd47e8847be62188cf999407eacf4ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
