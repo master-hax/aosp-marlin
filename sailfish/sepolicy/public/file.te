@@ -1,0 +1,1 @@
+type sysfs_oem_sensor, fs_type, sysfs_type;
