@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "827258df_5802c691",
+        "filename": "sailfish/sepolicy/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1080813
+      },
+      "writtenOn": "2017-11-08T08:26:44Z",
+      "side": 1,
+      "message": "Will have error:\n\nfile_contexts.concat.tmp: Multiple different specifications for /foo_file  (u:object_r:vendor_foo_file:s0 and u:object_r:foo_file:s0)",
+      "range": {
+        "startLine": 1,
+        "startChar": 31,
+        "endLine": 1,
+        "endChar": 46
+      },
+      "revId": "3858af88512f5cc2a198ee7511f40458be241e01",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
