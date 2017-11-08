@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cab2191e_73e5735c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1080813
+      },
+      "writtenOn": "2017-11-08T10:36:42Z",
+      "side": 1,
+      "message": "Is it possible for vendor file_contexts to use attributezed file type (foo_file_10000_0).\n\nEither directly or indirectly.\n\nSo it can be in synced with nonplat_sepolicy.cil.",
+      "range": {
+        "startLine": 18,
+        "startChar": 33,
+        "endLine": 18,
+        "endChar": 41
+      },
+      "revId": "3be70533735d3af4182f60b84843c415c74c395e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
