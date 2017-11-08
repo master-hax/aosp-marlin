@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "73d01354_4babbe78",
+        "filename": "sailfish/sepolicy/vendor/file.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1080813
+      },
+      "writtenOn": "2017-11-08T08:21:39Z",
+      "side": 1,
+      "message": "This cannot compile.\n\ndevice/google/marlin/sailfish/sepolicy/vendor/device.te:2:ERROR \u0027Duplicate declaration of type\u0027 at token \u0027;\u0027 on line 43718:",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 23
+      },
+      "revId": "45d66947a820632c10233600c2920056d18d0502",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
