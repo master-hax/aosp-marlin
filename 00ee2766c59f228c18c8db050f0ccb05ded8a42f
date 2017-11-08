@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba1356ae_a126cefc",
+        "filename": "sailfish/sepolicy/public/oem_process.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1080813
+      },
+      "writtenOn": "2017-11-08T10:08:09Z",
+      "side": 1,
+      "message": "Only use attributes defined in system/public.",
+      "range": {
+        "startLine": 3,
+        "startChar": 18,
+        "endLine": 3,
+        "endChar": 36
+      },
+      "revId": "00ee2766c59f228c18c8db050f0ccb05ded8a42f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4ac071af_208cc382",
+        "filename": "sailfish/sepolicy/vendor/file.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1080813
+      },
+      "writtenOn": "2017-11-08T10:08:09Z",
+      "side": 1,
+      "message": "associate the system/public attribute",
+      "range": {
+        "startLine": 1,
+        "startChar": 31,
+        "endLine": 1,
+        "endChar": 49
+      },
+      "revId": "00ee2766c59f228c18c8db050f0ccb05ded8a42f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
