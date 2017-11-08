@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "59e3547c_3069cb8e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1080813
+      },
+      "writtenOn": "2017-11-08T09:59:37Z",
+      "side": 1,
+      "message": "GSI lacks this mapping and vendor file_contexts uses foo_device, while the vendor allow rule uses foo_file_10000_0.",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 54
+      },
+      "revId": "700d92803496589d542ba9c374084d21aa6130ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
