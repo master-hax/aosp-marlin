@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a9c1bf9d_0e3434e9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1080813
+      },
+      "writtenOn": "2017-11-09T09:53:08Z",
+      "side": 1,
+      "message": "This will have secilc merge error:\nType sysfs_oem_sensor is invalid for role object_r  \n  \nBecause GSI lacks:\nplat_sepolicy.cil:(type sysfs_oem_sensor)        \u003c-- GSI lacks this, but it\u0027s duplicated to /vendor.\n  \nplat_sepolicy.cil:(roletype object_r sysfs_oem_sensor)    \u003c--- GSI lacks this.\n  \nThe genfscon on vendor cannot work:\n(genfscon sysfs /sys/devices/platform/oem_sensor (u object_r sysfs_oem_sensor ((s0) (s0))))",
+      "range": {
+        "startLine": 18,
+        "startChar": 64,
+        "endLine": 18,
+        "endChar": 80
+      },
+      "revId": "6bed23564b9cc45e171ebeefc6f5645c5cde2318",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
