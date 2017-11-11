@@ -23,6 +23,7 @@ unix_socket_connect(radio, rild, rild)
 userdebug_or_eng(`
   allow radio diag_device:chr_file rw_file_perms;
 ')
+dontaudit radio diag_device:chr_file rw_file_perms;
 
 # access to /dev/avtimer
 allow radio avtimer_device:chr_file rw_file_perms;
@@ -35,8 +36,3 @@ allow radio vendor_file:file rx_file_perms;
 
 # read access to sys/module/diagchar/parameters/timestamp_switch
 allow radio sysfs_timestamp_switch:file r_file_perms;
-
-# TODO scope this down. Granting these here is not granting new permissions,
-# just moving existing permissions from domain_deprecated to radio as part of
-# b/28760354 in order to deprivilege other processes which do not need access.
-r_dir_file(radio, sysfs)
