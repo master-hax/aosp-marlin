@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a1365868_b5b147fe",
+        "filename": "sepolicy/hal_dumpstate_impl.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1003966
+      },
+      "writtenOn": "2017-11-15T20:21:42Z",
+      "side": 1,
+      "message": "it would be nice if this entire block was indented by 2 spaces to make it clearer this was within a userdebug_or_eng() block.",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 59
+      },
+      "revId": "b8e831ee12bd7e553567d3131e0527fb1ab9a029",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
