@@ -6,10 +6,6 @@ init_daemon_domain(camera)
 
 allow camera self:capability sys_nice;
 
-binder_call(camera, system_server)
-binder_call(camera, cameraserver)
-allow camera system_server:unix_stream_socket { read write };
-
 allow camera ion_device:chr_file rw_file_perms;
 allow camera sysfs_msm_subsys:file r_file_perms;
 allow camera camera_device:chr_file rw_file_perms;
@@ -23,10 +19,6 @@ allow camera sysfs_video:file r_file_perms;
 allow camera system_file:dir r_dir_perms;
 
 set_prop(camera, camera_prop)
-
-allow camera surfaceflinger:fd use;
-allow camera hal_graphics_allocator:fd use;
-allow camera cameraserver:fd use;
 
 allow camera input_device:dir r_dir_perms;
 allow camera input_device:chr_file r_file_perms;
