@@ -1,0 +1,2 @@
+allow priv_app oem_service:service_manager find;
+binder_call(priv_app, oem_service)
