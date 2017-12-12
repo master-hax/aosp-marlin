@@ -33,7 +33,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.vc_call_vol_steps=7
+    ro.config.vc_call_vol_steps=7 \
+    fmas.hdph_sgain=0
 
 # HWUI cache sizes
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -50,20 +51,12 @@ PRODUCT_PACKAGES += \
     sensors.sailfish \
     activity_recognition.sailfish
 
-# NFC packages
-PRODUCT_PACKAGES += \
-    nfc_nci.sailfish
-
 PRODUCT_COPY_FILES += \
     device/google/marlin/nfc/libnfc-nxp.sailfish.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # Led packages
 PRODUCT_PACKAGES += \
     lights.sailfish
-
-# Thermal packages
-PRODUCT_PACKAGES += \
-    thermal.sailfish
 
 # VR packages
 PRODUCT_PACKAGES += \
