@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d2591609_9a3577ee",
+        "filename": "sepolicy/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1026058
+      },
+      "writtenOn": "2017-12-12T22:23:09Z",
+      "side": 1,
+      "message": "escape please (here and below)",
+      "range": {
+        "startLine": 52,
+        "startChar": 35,
+        "endLine": 52,
+        "endChar": 36
+      },
+      "revId": "5a477348ef1df923304cd8fd679c7249ef7f3388",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
