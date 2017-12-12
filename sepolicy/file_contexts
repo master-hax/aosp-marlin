@@ -127,6 +127,7 @@
 /vendor/bin/init\.power\.sh        u:object_r:init_power_exec:s0
 /vendor/bin/init\.radio\.sh        u:object_r:init_radio_exec:s0
 /vendor/bin/init\.foreground\.sh   u:object_r:init_foreground_exec:s0
+/vendor/bin/move_widevine_data\.sh u:object_r:move-widevine-data-sh_exec:s0
 
 ###############################################
 # same-process HAL files and their dependencies
@@ -187,6 +188,7 @@
 /data/vendor/camera(/.*)?        u:object_r:camera_vendor_data_file:s0
 
 /data/vendor/audio(/.*)?         u:object_r:audio_vendor_data_file:s0
+/data/vendor/mediadrm(/.*)?      u:object_r:mediadrm_vendor_data_file:s0
 
 # /
 
