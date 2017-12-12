@@ -46,6 +46,30 @@
       "revId": "5a477348ef1df923304cd8fd679c7249ef7f3388",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fb64ff08_c5a52eed",
+        "filename": "sepolicy/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-12-12T22:58:29Z",
+      "side": 1,
+      "message": "genfscon does not use regexes. It\u0027s simple prefix matching. Leave as-is.",
+      "parentUuid": "090d1576_5eb3e7e4",
+      "range": {
+        "startLine": 52,
+        "startChar": 35,
+        "endLine": 52,
+        "endChar": 36
+      },
+      "revId": "5a477348ef1df923304cd8fd679c7249ef7f3388",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
