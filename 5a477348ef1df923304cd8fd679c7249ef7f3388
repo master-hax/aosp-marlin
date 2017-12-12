@@ -22,6 +22,30 @@
       "revId": "5a477348ef1df923304cd8fd679c7249ef7f3388",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "090d1576_5eb3e7e4",
+        "filename": "sepolicy/genfs_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1124693
+      },
+      "writtenOn": "2017-12-12T22:38:47Z",
+      "side": 1,
+      "message": "labeling works correctly without the escape; and other entries in this file don\u0027t use the escape.",
+      "parentUuid": "d2591609_9a3577ee",
+      "range": {
+        "startLine": 52,
+        "startChar": 35,
+        "endLine": 52,
+        "endChar": 36
+      },
+      "revId": "5a477348ef1df923304cd8fd679c7249ef7f3388",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
