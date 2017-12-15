@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e12a7099_b3b7b8e9",
+        "filename": "sepolicy/move-widevine-data-sh.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-12-15T05:29:03Z",
+      "side": 1,
+      "message": "The current setup will violate a neverallow rule. I believe you will need:\ntypeattribute move-widevine-data-sh data_between_core_and_vendor_violators;\n\nWhich can only be used on devices launched on oreo-mr1 or before. (such as Marlin/Sailfish or Walleye/Taimen).",
+      "revId": "5d58adb1336f94fc6668cd592ece71941b464c09",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bc361132_3dc928be",
+        "filename": "sepolicy/move-widevine-data-sh.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-12-15T05:29:03Z",
+      "side": 1,
+      "message": "delete",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 69
+      },
+      "revId": "5d58adb1336f94fc6668cd592ece71941b464c09",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
