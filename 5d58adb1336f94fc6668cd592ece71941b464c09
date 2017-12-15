@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "f0546a61_e6de185d",
+        "filename": "sepolicy/move-widevine-data-sh.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1005970
+      },
+      "writtenOn": "2017-12-15T05:46:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e12a7099_b3b7b8e9",
+      "revId": "5d58adb1336f94fc6668cd592ece71941b464c09",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bc361132_3dc928be",
         "filename": "sepolicy/move-widevine-data-sh.te",
         "patchSetId": 2
@@ -30,6 +48,30 @@
       "writtenOn": "2017-12-15T05:29:03Z",
       "side": 1,
       "message": "delete",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 69
+      },
+      "revId": "5d58adb1336f94fc6668cd592ece71941b464c09",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f58e5e8b_ff921358",
+        "filename": "sepolicy/move-widevine-data-sh.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1005970
+      },
+      "writtenOn": "2017-12-15T05:46:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bc361132_3dc928be",
       "range": {
         "startLine": 9,
         "startChar": 0,
