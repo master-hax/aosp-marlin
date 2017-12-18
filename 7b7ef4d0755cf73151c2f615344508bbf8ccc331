@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e96e799c_93b2d4a4",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 536,
+      "author": {
+        "id": 1056365
+      },
+      "writtenOn": "2017-12-18T22:24:43Z",
+      "side": 1,
+      "message": "Actual definitions here.",
+      "revId": "7b7ef4d0755cf73151c2f615344508bbf8ccc331",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
