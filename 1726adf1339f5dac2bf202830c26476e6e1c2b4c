@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "10e841dc_6c7d7a3c",
+        "filename": "sepolicy/hal_drm_default.te",
+        "patchSetId": 9
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-12-18T22:08:22Z",
+      "side": 1,
+      "message": "is this actually necessary? I added it here because it was previously granted to hal_drm, which includes both hal_drm_widevine and hal_drm_default. But it occurs to me that hal_drm_default may never have required access.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 71
+      },
+      "revId": "1726adf1339f5dac2bf202830c26476e6e1c2b4c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
