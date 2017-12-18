@@ -39,6 +39,10 @@ ifneq ($(TARGET_USES_AOSP),true)
     LOCAL_CFLAGS += -DEXTRA_POWERHAL_HINTS
 endif
 
+LOCAL_CFLAGS += \
+    -Wno-unused-function \
+    -Wno-unused-parameter \
+
 LOCAL_SHARED_LIBRARIES := \
     libbase \
     libcutils \
