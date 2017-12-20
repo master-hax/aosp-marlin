@@ -22,6 +22,30 @@
       "revId": "618a436674504da4f393f027fc5f9b071773fad9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5720b7cc_80e1bfe9",
+        "filename": "sepolicy/hal_drm_widevine.te",
+        "patchSetId": 11
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1005970
+      },
+      "writtenOn": "2017-12-20T06:51:33Z",
+      "side": 1,
+      "message": "Good catch, I am surprised it works. I have an early plane to catch, I will test the update on Wed. Thanks.",
+      "parentUuid": "2dc1e342_37c617f5",
+      "range": {
+        "startLine": 17,
+        "startChar": 14,
+        "endLine": 17,
+        "endChar": 21
+      },
+      "revId": "618a436674504da4f393f027fc5f9b071773fad9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
