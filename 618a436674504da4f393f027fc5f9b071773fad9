@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2dc1e342_37c617f5",
+        "filename": "sepolicy/hal_drm_widevine.te",
+        "patchSetId": 11
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2017-12-20T05:15:09Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be hal_drm_widevine, not hal_drm_default?",
+      "range": {
+        "startLine": 17,
+        "startChar": 14,
+        "endLine": 17,
+        "endChar": 21
+      },
+      "revId": "618a436674504da4f393f027fc5f9b071773fad9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
