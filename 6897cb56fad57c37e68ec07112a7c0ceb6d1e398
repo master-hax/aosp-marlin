@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bb842503_9c275876",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1071489
+      },
+      "writtenOn": "2017-12-21T23:16:09Z",
+      "side": 1,
+      "message": "Nit: \"bluetooth\" -\u003e \"Bluetooth\"",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 70
+      },
+      "revId": "6897cb56fad57c37e68ec07112a7c0ceb6d1e398",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
