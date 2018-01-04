@@ -22,6 +22,30 @@
       "revId": "2c4097437c324cfa3235814a74112d30427bc7f4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "abc81e4f_51a3182b",
+        "filename": "sepolicy/hal_drm_widevine.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1005920
+      },
+      "writtenOn": "2018-01-04T18:57:24Z",
+      "side": 1,
+      "message": "Good point, I\u0027m checking with Qualcomm when they can switch to PowerHAL. It hasn\u0027t happened yet for drm playback and until it does we are getting avc denials that can be fixed temporarily by this CL.",
+      "parentUuid": "b512038b_9c04a9ec",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 55
+      },
+      "revId": "2c4097437c324cfa3235814a74112d30427bc7f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
