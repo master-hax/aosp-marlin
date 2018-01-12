@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a17ab741_bfa78f44",
+        "filename": "sepolicy/hal_drm_default.te",
+        "patchSetId": 16
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2018-01-12T06:11:35Z",
+      "side": 1,
+      "message": "is this actually needed?",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 71
+      },
+      "revId": "66cb3e403cf564f19f8fda456d8c16264ef323e4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d984f811_04a21d43",
+        "filename": "sepolicy/hal_drm_widevine.te",
+        "patchSetId": 16
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2018-01-12T06:11:35Z",
+      "side": 1,
+      "message": "this needs to be removed.",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 62
+      },
+      "revId": "66cb3e403cf564f19f8fda456d8c16264ef323e4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
