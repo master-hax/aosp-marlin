@@ -1,0 +1,9 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Joel Galenson <jgalenson@google.com>
+Autosubmit+1: Joel Galenson <jgalenson@google.com>
+Code-Review+2: Jeffrey Vander Stoep <jeffv@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Fri, 12 Jan 2018 16:39:49 +0000
+Reviewed-on: https://android-review.googlesource.com/585966
+Project: device/google/marlin
+Branch: refs/heads/master
