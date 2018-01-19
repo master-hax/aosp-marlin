@@ -2,3 +2,8 @@
 
 allow vendor_init debugfs_sps:dir search;
 allow vendor_init debugfs_sps:file w_file_perms;
+
+setprop(vendor_init, vold_prop)
+setprop(vendor_init, default_prop)
+setprop(vendor_init, system_prop)
+setprop(vendor_init, ffs_prop)
