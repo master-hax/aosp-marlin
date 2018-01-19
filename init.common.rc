@@ -861,3 +861,10 @@ service mid_sh /vendor/bin/init.mid.sh
     group root system
     disabled
     oneshot
+
+# b/68982314
+on property:proc.uidcpupower=*
+   write /proc/uid_cpupower/enable 1
+
+on property:proc.uidcpupower=0
+   write /proc/uid_cpupower/enable 0
