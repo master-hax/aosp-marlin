@@ -817,6 +817,13 @@ on property:sys.retaildemo.enabled=1
 on property:sys.retaildemo.enabled=0
     write /sys/class/power_supply/battery/full_level_dis_batt_chg 100
 
+# b/68982314
+on property:proc.uidcpupower=*
+   write /proc/uid_cpupower/enable 1
+
+on property:proc.uidcpupower=0
+   write /proc/uid_cpupower/enable 0
+
 service devstart_sh /vendor/bin/init.qcom.devstart.sh
     class main
     user root
