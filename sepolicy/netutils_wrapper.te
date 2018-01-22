@@ -2,6 +2,9 @@
 allow netutils_wrapper netmgrd:fd use;
 allow netutils_wrapper netmgrd:fifo_file { getattr read write append };
 
+allow netutils_wrapper proc_net:file write;
+allow netutils_wrapper sysfs_net:file write;
+
 # netmgrd opens files without o_CLOEXEC and fork_execs the netutils wrappers
 # this results in all file (fd) permissions being audited for access by netutils_wrapper
 # domain. Stop those audit messages flooding the kernel log.
