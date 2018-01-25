@@ -1,0 +1,8 @@
+Presubmit-Ready+1: Tom Cherry <tomcherry@google.com>
+Code-Review+2: Jeffrey Vander Stoep <jeffv@google.com>
+Verified+1: Jeffrey Vander Stoep <jeffv@google.com>
+Submitted-by: Jeffrey Vander Stoep <jeffv@google.com>
+Submitted-at: Thu, 25 Jan 2018 01:34:18 +0000
+Reviewed-on: https://android-review.googlesource.com/599011
+Project: device/google/marlin
+Branch: refs/heads/master
