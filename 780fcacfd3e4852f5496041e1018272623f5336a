@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "56d46fb7_5d7d72cd",
+        "filename": "apns-full-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 365,
+      "author": {
+        "id": 1002609
+      },
+      "writtenOn": "2018-01-31T19:59:08Z",
+      "side": 1,
+      "message": "please don\u0027t add dun.  Without a dun entry we\u0027ll just use default and use this apn anyway, but when you add dun it modified user editability which is useful if you change the apn in the future.",
+      "range": {
+        "startLine": 365,
+        "startChar": 29,
+        "endLine": 365,
+        "endChar": 32
+      },
+      "revId": "780fcacfd3e4852f5496041e1018272623f5336a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0ffdc5ee_5c9e231f",
+        "filename": "apns-full-conf.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 1002609
+      },
+      "writtenOn": "2018-01-31T19:59:08Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 375,
+        "startChar": 29,
+        "endLine": 375,
+        "endChar": 32
+      },
+      "revId": "780fcacfd3e4852f5496041e1018272623f5336a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
