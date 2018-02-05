@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "75561353_8e733ebe",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1014443
+      },
+      "writtenOn": "2018-02-05T13:25:52Z",
+      "side": 1,
+      "message": "why did you choose \"sailfish\" btw. ? Why not variants of aosp_arm64 or other \"generic\" targets ?",
+      "range": {
+        "startLine": 7,
+        "startChar": 6,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "eb25f349d374a2c29bb25829443a0f4b8b07c6e1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
