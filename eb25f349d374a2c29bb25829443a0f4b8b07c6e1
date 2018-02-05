@@ -46,6 +46,30 @@
       "revId": "eb25f349d374a2c29bb25829443a0f4b8b07c6e1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40acd7fb_b0426eea",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1060959
+      },
+      "writtenOn": "2018-02-05T15:21:13Z",
+      "side": 1,
+      "message": "Tried two different setups with no luck. Not sure if they\u0027re broken or if this is user error..\n\nlunch aosp_arm64 \u0026\u0026 m -j systemimage userdataimage ramdisk \u0026\u0026 emulator\nStuck at the boot logo.. seems like a native crash in surfaceflinger, which restarts zygote, repeat\n\nlunch aosp_x86_64 \u0026\u0026 m -j systemimage userdataimage ramdisk \u0026\u0026 emulator\nJust shows up as \"offline\" in adb devices. No UI.",
+      "parentUuid": "01c532ec_e5347347",
+      "range": {
+        "startLine": 7,
+        "startChar": 6,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "eb25f349d374a2c29bb25829443a0f4b8b07c6e1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
