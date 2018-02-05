@@ -30,3 +30,4 @@
 add_lunch_combo aosp_marlin-userdebug
 add_lunch_combo aosp_marlin_svelte-userdebug
 add_lunch_combo aosp_sailfish-userdebug
+add_lunch_combo aosp_sailfish64-userdebug
