@@ -22,6 +22,30 @@
       "revId": "eb25f349d374a2c29bb25829443a0f4b8b07c6e1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "01c532ec_e5347347",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1060959
+      },
+      "writtenOn": "2018-02-05T13:36:27Z",
+      "side": 1,
+      "message": "I think doing a more generic target would be better. Just not sure how to go on about testing them (what devices can I install aosp_arm64 on?).",
+      "parentUuid": "75561353_8e733ebe",
+      "range": {
+        "startLine": 7,
+        "startChar": 6,
+        "endLine": 7,
+        "endChar": 21
+      },
+      "revId": "eb25f349d374a2c29bb25829443a0f4b8b07c6e1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
