@@ -1,0 +1,9 @@
+Code-Review+2: Jeffrey Vander Stoep <jeffv@google.com>
+Verified+1: Wei Wang <wvw@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Autosubmit+1: Wei Wang <wvw@google.com>
+Submitted-by: Wei Wang <wvw@google.com>
+Submitted-at: Tue, 06 Feb 2018 21:53:31 +0000
+Reviewed-on: https://android-review.googlesource.com/610666
+Project: device/google/marlin
+Branch: refs/heads/master
