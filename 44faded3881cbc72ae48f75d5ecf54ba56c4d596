@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "137a2b28_7c412fe8",
+        "filename": "sepolicy/file.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1124693
+      },
+      "writtenOn": "2018-02-14T19:01:32Z",
+      "side": 1,
+      "message": "Need this to avoid merge conflicts :(",
+      "revId": "44faded3881cbc72ae48f75d5ecf54ba56c4d596",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
