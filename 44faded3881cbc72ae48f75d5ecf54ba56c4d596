@@ -16,6 +16,24 @@
       "revId": "44faded3881cbc72ae48f75d5ecf54ba56c4d596",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d9ad96db_e6f3ea79",
+        "filename": "sepolicy/file.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2018-02-14T19:03:58Z",
+      "side": 1,
+      "message": "Don\u0027t add stuff from other commits. Ether CP that commit to AOSP, or use the \"merged-in\" tag in  your commit message to avoid the merge conflict.",
+      "parentUuid": "137a2b28_7c412fe8",
+      "revId": "44faded3881cbc72ae48f75d5ecf54ba56c4d596",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
