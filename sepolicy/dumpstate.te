@@ -2,3 +2,20 @@ userdebug_or_eng(`
 #allow dumpstate smlog_dump_file:dir create_dir_perms;
 #allow dumpstate smlog_dump_file:file create_file_perms;
 ')
+
+# For collecting bugreports
+allow dumpstate sysfs_scsi_devices_0000:file r_file_perms;
+get_prop(dumpstate, bluetooth_log_prop)
+get_prop(dumpstate, cnss_diag_prop)
+get_prop(dumpstate, hw_sku_prop)
+get_prop(dumpstate, mid_prop)
+get_prop(dumpstate, post_boot_prop)
+get_prop(dumpstate, ramdump_prop)
+get_prop(dumpstate, sensors_prop)
+get_prop(dumpstate, ssr_prop)
+get_prop(dumpstate, sys_time_prop)
+get_prop(dumpstate, thermal_prop)
+get_prop(dumpstate, wc_prop)
+allow dumpstate modem_block_device:blk_file getattr;
+allow dumpstate persist_block_device:blk_file getattr;
+allow dumpstate persist_file:dir getattr;
