@@ -60,3 +60,7 @@ allow hal_dumpstate_impl sysfs_scsi_devices_0000:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_scsi_devices_0000:file r_file_perms;
 allow hal_dumpstate_impl debugfs_ufs:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_ufs:file r_file_perms;
+
+# For collecting bugreports
+# For /data/user_de/0/com.android.shell/files/bugreports/dumpstate_board.txt.
+dontaudit hal_dumpstate_impl shell_data_file:file getattr;
