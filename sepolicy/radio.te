@@ -37,3 +37,6 @@ allow radio vendor_file:file rx_file_perms;
 
 # read access to sys/module/diagchar/parameters/timestamp_switch
 allow radio sysfs_timestamp_switch:file r_file_perms;
+
+# read access to sys/bus/esoc/devices/ directory.
+allow radio sysfs:dir r_dir_perms;
