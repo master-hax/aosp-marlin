@@ -154,6 +154,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.1-service.marlin
 
+# DRM HAL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.0-service.widevine \
+    android.hardware.drm@1.1-service.clearkey
+
 # Audio effects
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
