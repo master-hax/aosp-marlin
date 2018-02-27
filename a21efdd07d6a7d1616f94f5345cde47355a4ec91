@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "61ca20f7_d354061e",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1005920
+      },
+      "writtenOn": "2018-02-27T21:44:50Z",
+      "side": 1,
+      "message": "This is more than what the commit message says. If these dependencies are not part of the build already, how did the widevine and clearkey services work before?",
+      "range": {
+        "startLine": 159,
+        "startChar": 0,
+        "endLine": 162,
+        "endChar": 47
+      },
+      "revId": "a21efdd07d6a7d1616f94f5345cde47355a4ec91",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
