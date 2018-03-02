@@ -22,6 +22,30 @@
       "revId": "667e561044f0bf1201b991250409339a9c59bff0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0d040e7e_b1c19800",
+        "filename": "sepolicy/hal_dumpstate_impl.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1208973
+      },
+      "writtenOn": "2018-03-02T21:34:04Z",
+      "side": 1,
+      "message": "Good point; I made the change in Wahoo but not here.",
+      "parentUuid": "11bcb5c2_ff188573",
+      "range": {
+        "startLine": 65,
+        "startChar": 0,
+        "endLine": 65,
+        "endChar": 9
+      },
+      "revId": "667e561044f0bf1201b991250409339a9c59bff0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
