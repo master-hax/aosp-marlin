@@ -21,6 +21,10 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
+#define BTA_AV_SINK_INCLUDED  TRUE
+#define BTM_DEF_LOCAL_NAME   "Pixel Car"
+// Set Class of Device: Major: Audio, Minor:Car Audio
+#define BTA_DM_COD {0x76, 0x04, 0x20}
 
 // Google VSC spec support
 #define BLE_VND_INCLUDED TRUE
