@@ -21,6 +21,8 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
+#define BTA_AV_SINK_INCLUDED  TRUE
+#define BTM_DEF_LOCAL_NAME   "Pixel Car"
 
 // Google VSC spec support
 #define BLE_VND_INCLUDED TRUE
