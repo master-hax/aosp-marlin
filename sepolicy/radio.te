@@ -3,6 +3,9 @@ qmux_socket(radio)
 
 allow radio uce_service:service_manager { add find };
 
+# read access to sys/bus/esoc/devices/ directory.
+allow radio sysfs:dir r_dir_perms;
+
 r_dir_file(radio, sysfs_msm_subsys)
 
 # Access to /vendor/framework/qti-vzw-ims-internal.jar for all
@@ -32,6 +35,7 @@ allowxperm radio self:udp_socket ioctl priv_sock_ioctls;
 
 # Needed for use .so files in /vendor/lib64 needed by ims which runs as com.android.phone (radio)
 # r_dir_file(radio, vendor_file)
+typeattribute radio system_executes_vendor_violators;
 allow radio vendor_file:file rx_file_perms;
 
 # read access to sys/module/diagchar/parameters/timestamp_switch
