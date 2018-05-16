@@ -14,6 +14,7 @@ genfscon proc /debugdriver/driverdump                 u:object_r:proc_wifi_dbg:s
 
 # sysfs
 genfscon sysfs /devices/virtual/nanohub/nanohub       u:object_r:sysfs_nanoapp_cmd:s0
+genfscon sysfs /devices/virtual/net                   u:object_r:sysfs_net:s0
 genfscon sysfs /devices/virtual/thermal               u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/bt_qca6174/extldo             u:object_r:sysfs_bluetooth_writable:s0
 genfscon sysfs /devices/bt_qca6174/rfkill/rfkill0/state u:object_r:sysfs_bluetooth_writable:s0
@@ -42,21 +43,32 @@ genfscon sysfs /devices/soc/6a00000.ssusb/6a00000.dwc3/gadget/lun0/ u:object_r:s
 genfscon sysfs /devices/soc/8c0000.qcom,msm-cam       u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/soc/aa4000.qcom,fd            u:object_r:sysfs_video:s0
 genfscon sysfs /devices/soc/soc:fp_fpc1020            u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /devices/soc/qpnp-rtc-8/rtc            u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/soc0                          u:object_r:sysfs_soc:s0
 genfscon sysfs /devices/virtual/htc_laser             u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/virtual/htc_laser/laser/enable_ps_sensor u:object_r:sysfs_enable_ps_sensor:s0
-genfscon sysfs /devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan0 u:object_r:sysfs_wifi:s0
+genfscon sysfs /devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan0 u:object_r:sysfs_net:s0
 genfscon sysfs /devices/soc/0.qcom,rmtfs_sharedmem    u:object_r:sysfs_rmtfs:s0
 genfscon sysfs /devices/soc/84000000.qcom,rmtfs_rtel_sharedmem u:object_r:sysfs_rmtfs:s0
 genfscon sysfs /module/lpm_levels/parameters          u:object_r:sysfs_power_management:s0
-genfscon sysfs /devices/soc/qpnp-fg-17/power_supply/bms/capacity             u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/soc/qpnp-smbcharger-16/power_supply/battery/capacity u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/6a00000.ssusb/power_supply                u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/75b5000.i2c/i2c-7/7-001d/power_supply     u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/msm-bcl-14/power_supply                   u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/soc:qcom,bcl/power_supply                 u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/qpnp-fg-17/power_supply                   u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/qpnp-smbcharger-16/power_supply           u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/virtual/timed_output/vibrator/voltage_level   u:object_r:sysfs_vibrator:s0
 genfscon sysfs /module/diagchar/parameters/timestamp_switch           u:object_r:sysfs_timestamp_switch:s0
 genfscon sysfs /devices/soc/qpnp-smbcharger-16/power_supply/battery/system_temp_level u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/soc/624000.ufshc/host0/target0:0:0/0:0:0:0    u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/soc/624000.ufshc/host0/target0:0:0/0:0:0:1    u:object_r:sysfs_scsi_devices_other:s0
+genfscon sysfs /devices/soc/624000.ufshc/host0/target0:0:0/0:0:0:2    u:object_r:sysfs_scsi_devices_other:s0
+genfscon sysfs /devices/soc/624000.ufshc/host0/target0:0:0/0:0:0:3    u:object_r:sysfs_scsi_devices_other:s0
+genfscon sysfs /devices/soc/624000.ufshc/host0/target0:0:0/0:0:0:4    u:object_r:sysfs_scsi_devices_other:s0
+genfscon sysfs /devices/soc/624000.ufshc/host0/target0:0:0/0:0:0:5    u:object_r:sysfs_scsi_devices_other:s0
 genfscon sysfs /devices/soc/624000.ufshc/health                       u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /module/diagchar                       u:object_r:sysfs_diag:s0
+genfscon sysfs /devices/virtual/block/                                u:object_r:sysfs_devices_block:s0
 
 # debugfs
 genfscon debugfs /kgsl/proc                u:object_r:debugfs_kgsl:s0
