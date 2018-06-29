@@ -14,7 +14,6 @@
 
 # AOSP packages required by the blobs
 PRODUCT_PACKAGES := \
-    com.android.ims.rcsmanager.xml \
     com.android.ims.rcsmanager
 
 #  blob(s) necessary for Marlin hardware
