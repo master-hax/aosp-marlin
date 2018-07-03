@@ -22,6 +22,30 @@
       "revId": "b4c71e90928c17e9c5bd362ddc6ac1bcd560e2c8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2ce6ca26_0e74dada",
+        "filename": "sepolicy/init.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1121838
+      },
+      "writtenOn": "2018-07-03T17:40:22Z",
+      "side": 1,
+      "message": "But without this change, CL 711855 will fail to build. Do you want me to whitelist init instead? I don\u0027t want to do that since it is a device-specific policy (in which we allow init to read sysfs_batteryinfo from inheritance of sysfs_type, but we don\u0027t really need that)",
+      "parentUuid": "d3ecc267_7d0394a3",
+      "range": {
+        "startLine": 8,
+        "startChar": 25,
+        "endLine": 8,
+        "endChar": 42
+      },
+      "revId": "b4c71e90928c17e9c5bd362ddc6ac1bcd560e2c8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
