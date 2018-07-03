@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d3ecc267_7d0394a3",
+        "filename": "sepolicy/init.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2018-07-03T05:09:26Z",
+      "side": 1,
+      "message": "this is silly. Why care about what symlinks in /sys that init is allowed to follow?",
+      "range": {
+        "startLine": 8,
+        "startChar": 25,
+        "endLine": 8,
+        "endChar": 42
+      },
+      "revId": "b4c71e90928c17e9c5bd362ddc6ac1bcd560e2c8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
