@@ -46,6 +46,30 @@
       "revId": "b4c71e90928c17e9c5bd362ddc6ac1bcd560e2c8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24e182b7_35fb88b9",
+        "filename": "sepolicy/init.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2018-07-10T04:22:21Z",
+      "side": 1,
+      "message": "I commented on that change. I don\u0027t think there is much value in disallowing symlink following like this. Practically, genfs_contexts does not allow labeling symlinks, so these are all labeled the default sysfs on most devices anyway.",
+      "parentUuid": "2ce6ca26_0e74dada",
+      "range": {
+        "startLine": 8,
+        "startChar": 25,
+        "endLine": 8,
+        "endChar": 42
+      },
+      "revId": "b4c71e90928c17e9c5bd362ddc6ac1bcd560e2c8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
