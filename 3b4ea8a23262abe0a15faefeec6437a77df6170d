@@ -1,0 +1,10 @@
+Code-Review+2: Eino-Ville Talvala <etalvala@google.com>
+Presubmit-Ready+1: Andrew Hsieh <andrewhsieh@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Andrew Hsieh <andrewhsieh@google.com>
+Autosubmit+1: Andrew Hsieh <andrewhsieh@google.com>
+Submitted-by: Andrew Hsieh <andrewhsieh@google.com>
+Submitted-at: Fri, 13 Jul 2018 06:14:34 +0000
+Reviewed-on: https://android-review.googlesource.com/716006
+Project: device/google/marlin
+Branch: refs/heads/master
