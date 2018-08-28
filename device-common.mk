@@ -476,7 +476,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
-    android.hardware.nfc@1.1-service \
+    android.hardware.nfc@1.1-service-nxp \
 
 #Secure Element Service
 PRODUCT_PACKAGES += \
