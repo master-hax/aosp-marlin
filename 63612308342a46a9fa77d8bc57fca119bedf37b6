@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cc510e5b_e00c1d9b",
+        "filename": "overlay/packages/apps/CarrierConfig/res/xml/vendor.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1087703
+      },
+      "writtenOn": "2018-10-04T22:32:13Z",
+      "side": 1,
+      "message": "Are these carrier configs device-specific? If not, it\u0027s a better idea to put all these in the CarrierConfig app assets/ directory instead so you don\u0027t have to make a separate change for each device.",
+      "revId": "63612308342a46a9fa77d8bc57fca119bedf37b6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
