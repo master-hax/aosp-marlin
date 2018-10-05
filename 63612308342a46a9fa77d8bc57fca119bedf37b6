@@ -16,6 +16,24 @@
       "revId": "63612308342a46a9fa77d8bc57fca119bedf37b6",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8d981460_aa6d67b2",
+        "filename": "overlay/packages/apps/CarrierConfig/res/xml/vendor.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1137789
+      },
+      "writtenOn": "2018-10-05T08:33:29Z",
+      "side": 1,
+      "message": "Currently carrier config doesn\u0027t support reading assets from only mcc.\nAs I recall it expects the file name carrier_config_\u003cmcc\u003e\u003cmnc\u003e.xml\n\nA better approach would instead be:\ncarrier_config_\u003cmcc\u003e.xml + carrier_config_\u003cmcc\u003e\u003cmnc\u003e.xml",
+      "parentUuid": "cc510e5b_e00c1d9b",
+      "revId": "63612308342a46a9fa77d8bc57fca119bedf37b6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
