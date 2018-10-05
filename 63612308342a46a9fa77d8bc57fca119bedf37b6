@@ -34,6 +34,24 @@
       "revId": "63612308342a46a9fa77d8bc57fca119bedf37b6",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "31a0f559_ddf23a50",
+        "filename": "overlay/packages/apps/CarrierConfig/res/xml/vendor.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1221112
+      },
+      "writtenOn": "2018-10-05T09:45:50Z",
+      "side": 1,
+      "message": "It is a much bigger question to move these to CarrierConfig since as you say it will affect all devices, in this case we only want to fix so that marlin behaves like before. An investigation of moving them all to CarrierConfig will take time and is better done internally at Google later.",
+      "parentUuid": "8d981460_aa6d67b2",
+      "revId": "63612308342a46a9fa77d8bc57fca119bedf37b6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
