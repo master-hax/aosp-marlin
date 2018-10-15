@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Steven Moreland <smoreland@google.com>
+Verified+1: Tri Vo <trong@google.com>
+Submitted-by: Tri Vo <trong@google.com>
+Submitted-at: Mon, 15 Oct 2018 17:42:40 +0000
+Reviewed-on: https://android-review.googlesource.com/788617
+Project: device/google/marlin
+Branch: refs/heads/master
