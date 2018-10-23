@@ -6,3 +6,5 @@ allow update_engine_common {
   ssd_block_device
   modem_block_device
 }:blk_file rw_file_perms;
+
+allowxperm update_engine_common custom_ab_block_device:blk_file ioctl { BLKROGET BLKROSET };
