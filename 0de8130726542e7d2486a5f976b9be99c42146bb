@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f9f7924a_21983991",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1071150
+      },
+      "writtenOn": "2018-11-14T10:11:04Z",
+      "side": 1,
+      "message": "Do we need a bug number as a reminder?",
+      "range": {
+        "startLine": 71,
+        "startChar": 2,
+        "endLine": 71,
+        "endChar": 6
+      },
+      "revId": "0de8130726542e7d2486a5f976b9be99c42146bb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
