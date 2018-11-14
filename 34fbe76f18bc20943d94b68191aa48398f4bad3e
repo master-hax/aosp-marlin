@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "feccf407_e0ee0109",
+        "filename": "common/base.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 853,
+      "author": {
+        "id": 1038443
+      },
+      "writtenOn": "2018-11-14T20:57:09Z",
+      "side": 0,
+      "message": "Can we really not keep those two?",
+      "range": {
+        "startLine": 852,
+        "startChar": 0,
+        "endLine": 853,
+        "endChar": 18
+      },
+      "revId": "34fbe76f18bc20943d94b68191aa48398f4bad3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
