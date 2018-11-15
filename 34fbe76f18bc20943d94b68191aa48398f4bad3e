@@ -22,6 +22,30 @@
       "revId": "34fbe76f18bc20943d94b68191aa48398f4bad3e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9003d1af_282a34f7",
+        "filename": "common/base.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 853,
+      "author": {
+        "id": 1052644
+      },
+      "writtenOn": "2018-11-15T19:30:57Z",
+      "side": 0,
+      "message": "I\u0027ll try again; but we are really space-constrained on these devices (even more so on eng builds).\n\nI\u0027ve moved this change to a separate CL (https://android-review.googlesource.com/c/device/google/marlin/+/827713/), so that we can revert it when ART is only installed on the system image via the APEX (in /system/apex) and we have more space on marlin/sailfish to do speed-dex-preopting again.",
+      "parentUuid": "feccf407_e0ee0109",
+      "range": {
+        "startLine": 852,
+        "startChar": 0,
+        "endLine": 853,
+        "endChar": 18
+      },
+      "revId": "34fbe76f18bc20943d94b68191aa48398f4bad3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
