@@ -33,6 +33,10 @@ TARGET_PREBUILT_KERNEL := device/google/marlin-kernel/Image.gz-dtb.svelte
 
 PRODUCT_PROPERTY_OVERRIDES += ro.config.low_ram=true
 
-# Use lazy cas HAL implementation
+# Use lazy HAL implementations
 PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-service-lazy \
     android.hardware.cas@1.0-service-lazy
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.enableLazyHal=true

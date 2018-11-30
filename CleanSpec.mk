@@ -118,3 +118,8 @@ $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/etc/libnfc-nci.conf)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/bin/hw/android.hardware.cas@1.0-service)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/etc/init/android.hardware.cas@1.0-service.rc)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/etc/vintf/manifest/android.hardware.cas@1.0-service.xml)
+
+# Use android.hardware.camera.provider@2.4-service-lazy for marlin_svelte build
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/bin/hw/android.hardware.camera.provider@2.4-service)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc)
