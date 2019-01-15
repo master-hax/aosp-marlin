@@ -102,8 +102,6 @@ on init
     write /proc/sys/vm/page-cluster 0
 
 on fs
-    # Start HW service manager early
-    start hwservicemanager
     mount_all /vendor/etc/fstab.${ro.hardware} --early
 
     # Keeping following partitions outside fstab file. As user may not have
@@ -547,23 +545,11 @@ on property:wc_transport.start_hci=true
 on property:wc_transport.start_hci=false
     stop vendor.start_hci_filter
 
-service vendor.start_hci_filter /vendor/bin/wcnss_filter
-    class late_start
-    user bluetooth
-    group bluetooth diag
-    disabled
-
 on property:wc_transport.start_root=true
     start vendor.hci_filter_root
 
 on property:wc_transport.start_root=false
     stop vendor.hci_filter_root
-
-service vendor.hci_filter_root /vendor/bin/wcnss_filter
-    class late_start
-    user bluetooth
-    group bluetooth diag system
-    disabled
 
 service vendor.per_mgr /vendor/bin/pm-service
     class core
@@ -813,7 +799,7 @@ on property:sys.boot_completed=1
     write /dev/cpuset/application/cpus 1,3
 
     # end boot time fs tune
-    write /sys/block/sda/queue/read_ahead_kb 512
+    write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/dm-0/queue/read_ahead_kb 128
     write /sys/block/dm-1/queue/read_ahead_kb 128
@@ -845,15 +831,10 @@ on property:sys.boot_completed=1 && property:ro.build.type=user
     write /proc/sys/kernel/modules_disabled 1
 
 ## charger driver exposes now finer grain control, map demo mode to those properties
-# demo mode can only be exit wipping data which will also reset the persist properties
+# demo mode can only be exited by wiping data which will also reset the persist properties
 on property:sys.retaildemo.enabled=1
     setprop persist.vendor.charge.stop.level 35
     setprop persist.vendor.charge.start.level 30
-
-# system will not set the sys.retaildemo.enabled to 0 but this is used to set back to default charging
-on property:sys.retaildemo.enabled=0
-    setprop persist.vendor.charge.stop.level 100
-    setprop persist.vendor.charge.start.level 0
 
 on property:persist.vendor.charge.stop.level=*
     write /sys/module/htc_battery/parameters/charge_stop_level ${persist.vendor.charge.stop.level}
