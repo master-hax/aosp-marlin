@@ -70,6 +70,10 @@ persist.data.mode=concurrent
 #system props for time-services
 persist.timed.enable=true
 
+# system props for perfetto
+persist.traced.enable=1
+persist.heapprofd.enable=1
+
 #
 # system prop for opengles version
 #
