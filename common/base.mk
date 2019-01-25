@@ -849,7 +849,6 @@ $(call inherit-product, build/target/product/verity.mk)
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
   SystemUIGoogle \
-  SettingsGoogle \
   NexusLauncherPrebuilt \
 
 # Save space by disabling dexpreopt of GMS modules.
