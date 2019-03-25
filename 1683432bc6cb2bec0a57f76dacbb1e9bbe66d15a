@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dc925a80_7604fe03",
+        "filename": "sepolicy/domain.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1003966
+      },
+      "writtenOn": "2019-03-25T22:45:30Z",
+      "side": 1,
+      "message": "Looking at https://android-review.googlesource.com/c/platform/system/ashmemd/+/932569/1/ashmemd_client.cpp , a better approach would be to use the audit_access check instead.\n\n  dontaudit {\n    ...\n  } binder_device:chr_file audit_access;\n\nhttp://blog.siphos.be/2013/05/the-weird-audit_access-permission/\n\nThis way, we won\u0027t generate SELinux denials for someone calling access(R_OK | W_OK), but a direct open will still generate denials.\n\nWe don\u0027t want to get rid of denials entirely, since they are useful for debugging.\n\nAdditionally, because https://android-review.googlesource.com/c/platform/system/ashmemd/+/932569/1/ashmemd_client.cpp is checked into core Android code, I would move this dontaudit to system/sepolicy, rather than having this change be device specific.",
+      "revId": "1683432bc6cb2bec0a57f76dacbb1e9bbe66d15a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
