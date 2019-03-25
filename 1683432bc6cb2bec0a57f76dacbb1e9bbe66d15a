@@ -16,6 +16,24 @@
       "revId": "1683432bc6cb2bec0a57f76dacbb1e9bbe66d15a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dca90588_c6d4d1ef",
+        "filename": "sepolicy/domain.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1124693
+      },
+      "writtenOn": "2019-03-25T23:34:31Z",
+      "side": 1,
+      "message": "Thx. Always learning something new from you reviews :)",
+      "parentUuid": "dc925a80_7604fe03",
+      "revId": "1683432bc6cb2bec0a57f76dacbb1e9bbe66d15a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
