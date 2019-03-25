@@ -38,3 +38,13 @@ dontaudit domain firmware_file:dir search;
 
 allow domain debugfs_ion:dir search;
 allow domain debugfs_kgsl:dir search;
+
+# Pixel 1 devices don't have VNDK enabled. This leads to situations where
+# libcutils might probe for /dev/binder access from vendor context. Vendor code
+# is neverallow'ed binder access in Treble world, so ignore generated denials.
+# See b/129073672 for details.
+dontaudit {
+    domain
+    -coredomain
+    -appdomain
+} binder_device:chr_file *;
