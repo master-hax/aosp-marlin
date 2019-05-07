@@ -22,6 +22,30 @@
       "revId": "576c0ae358a561ca27e16118dc0bed2ca8ef3f56",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "60ff2be1_35c99f82",
+        "filename": "sepolicy/move-widevine-data-sh.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1409783
+      },
+      "writtenOn": "2019-05-07T17:27:24Z",
+      "side": 1,
+      "message": "We also need to create the L3 directory within /data/vendor/mediadrm/IDM*/ if it doesn\u0027t exist as part of http://go/ag/7323341. This is so we can move any L3 files in that directory to the L3 subfolder, which is also why we have the rename operation.",
+      "parentUuid": "1dbce825_fa87ec6c",
+      "range": {
+        "startLine": 13,
+        "startChar": 51,
+        "endLine": 13,
+        "endChar": 57
+      },
+      "revId": "576c0ae358a561ca27e16118dc0bed2ca8ef3f56",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
