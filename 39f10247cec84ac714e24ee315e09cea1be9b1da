@@ -46,6 +46,30 @@
       "revId": "39f10247cec84ac714e24ee315e09cea1be9b1da",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dc8539d5_c93d58b0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1038443
+      },
+      "writtenOn": "2019-07-19T10:27:59Z",
+      "side": 1,
+      "message": "I would rely on one device succesfully having pinned those files - all these configuration files are very copy-pasted and you can\u0027t try them all.",
+      "parentUuid": "7be11abe_719fa900",
+      "range": {
+        "startLine": 9,
+        "startChar": 6,
+        "endLine": 9,
+        "endChar": 7
+      },
+      "revId": "39f10247cec84ac714e24ee315e09cea1be9b1da",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
