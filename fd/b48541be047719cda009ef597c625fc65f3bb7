@@ -1,0 +1,10 @@
+Code-Review+2: Alistair Delva <adelva@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Lint+1: Lint 🤖 <android-build-ayeaye@system.gserviceaccount.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Autosubmit+1: Bowgo Tsai <bowgotsai@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 13 Oct 2020 06:54:55 +0000
+Reviewed-on: https://android-review.googlesource.com/c/device/google/marlin/+/1316515
+Project: device/google/marlin
+Branch: refs/heads/master
