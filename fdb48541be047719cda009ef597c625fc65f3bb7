@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a49bf148_7f882e3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3292389
+      },
+      "writtenOn": "2024-02-15T20:55:29Z",
+      "side": 1,
+      "message": "1316515: BoardConfig: Use SYSTEM_*_SEPOLICY_DIRS | https://android-review.googlesource.com/c/device/google/marlin/+/1316515",
+      "revId": "fdb48541be047719cda009ef597c625fc65f3bb7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
