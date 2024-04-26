@@ -33,6 +33,23 @@
       "message": "Switch from add_lunch_combo to COMMON_LUNCH_CHOICES\n\nBug: 77599627\nTest: lunch  [see entries in list]\nChange-Id: Id44fcfec47eeb979a745f879031f1bec7359a633",
       "revId": "0d7398193baa876a7084fb4e62bf803875dc0b99",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8014d8d_de16d267",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3409162
+      },
+      "writtenOn": "2024-04-26T04:52:29Z",
+      "side": 1,
+      "message": "#  Copyright (c) 2016, The Linux Foundation. All rights reserved.\n#\n#  Redistribution and use in source and binary forms, with or without\n#  modification, are permitted provided that the following conditions are\n#  met:\n#       * Redistributions of source code must retain the above copyright\n#         notice, this list of conditions and the following disclaimer.\n#       * Redistributions in binary form must reproduce the above\n#         copyright notice, this list of conditions and the following\n#         disclaimer in the documentation and/or other materials provided\n#         with the distribution.\n#       * Neither the name of The Linux Foundation nor the names of its\n#         contributors may be used to endorse or promote products derived\n#         from this software without specific prior written permission.\n#\n#  THIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESS OR IMPLIED\n#  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n#  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT\n#  ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS\n#  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n#  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n#  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\n#  BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n#  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\n#  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN\n#  IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n#\n\nadd_lunch_combo aosp_marlin-userdebug\nadd_lunch_combo aosp_marlin_svelte-userdebug\nadd_lunch_combo aosp_sailfish-userdebug",
+      "revId": "0d7398193baa876a7084fb4e62bf803875dc0b99",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
